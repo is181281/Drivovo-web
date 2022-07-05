@@ -1,0 +1,118 @@
+@import "../../assets/scss/abstracts.scss";
+
+.mainWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    max-width: 130rem;
+    height: 158px;
+    background: $color-black;
+    border-radius: 10px;
+    margin-top: 80px;
+    margin-bottom: 88px;
+}
+
+.image {
+    width: 494px;
+    height: 158px;
+    background: url(../../assets/images/banner-car.png);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.logo {
+    width: 213px;
+    height: 57px;
+    margin-left: 49px;
+}
+
+.text {
+    height: 66px;
+    width: 440px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 33px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-left: 53px;
+    white-space: pre-wrap
+}
+
+@media (min-width: 768px) and (max-width: 1360px) {
+
+    .mainWrapper {
+        justify-content: flex-start;
+        align-items: center;
+        max-width: 72.8rem;
+        height: 123px;
+        margin-top: 60px;
+        margin-bottom: 76px;
+    }
+
+    .image {
+        width: 219px;
+        height: 123px;
+        background: url(../../assets/images/banner-car-768.png) no-repeat;
+        border-bottom-left-radius: 0;
+    }
+
+    .logo {
+        width: 195px;
+        height: 52px;
+        margin-left: 30px;
+    }
+
+
+    .text {
+        height: 44px;
+        width: 245px;
+        font-size: 20px;
+        line-height: 22px;
+        margin-left: 22px;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .mainWrapper {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 391px;
+        width: 280px;
+        margin-top: 60px;
+        margin-bottom: 57px;
+    }
+
+    .image {
+        width: 280px;
+        height: 215px;
+        background: url(../../assets/images/banner-car-320.png) no-repeat;
+        border-bottom-left-radius: 0;
+    }
+
+    .logo {
+        width: 195px;
+        height: 52px;
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .text {
+        height: auto;
+        width: 205px;
+        font-size: 18px;
+        line-height: 20px;
+        letter-spacing: 0.032em;
+        margin-left: 0;
+        margin-top: 18px;
+        white-space: pre-wrap
+    }
+
+}

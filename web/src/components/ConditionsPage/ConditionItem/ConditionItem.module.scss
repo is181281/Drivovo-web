@@ -1,0 +1,96 @@
+@import "../../../assets/scss/abstracts.scss";
+
+.mainWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 62.2rem;
+    height: 15.2rem;
+    box-shadow: 0px 4px 38px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+    background: $color-white;
+    margin-bottom: 43px;
+    padding: 23px 37px 0 43px;
+  }
+
+.index {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 36px;
+    height: 36px;
+    left: -18px;
+    top: -18px;
+    background: $color-orange;
+    border-radius: 50%;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 125%;    
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 125%;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    width: 54.2rem;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 125%;
+    letter-spacing: 0.02em;
+    color: #000000;
+    margin-top: 8px;
+}
+
+@media (min-width: 768px) and (max-width: 1360px) {
+  .mainWrapper {
+    width: 71rem;
+    height: auto;
+    margin-bottom: 47px;
+    padding-bottom: 21px;
+  }
+    
+}
+
+
+@media (max-width: 767px) {
+    .mainWrapper {
+        width: 26.5rem;
+        height: auto;
+        margin-bottom: 35px;
+        padding: 19px 24px 20px 24px;
+      }
+
+      .header {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+      .text {
+        width: 22rem;
+        font-size: 14px;
+        line-height: 17px;
+        margin-top: 8px;
+    }
+}

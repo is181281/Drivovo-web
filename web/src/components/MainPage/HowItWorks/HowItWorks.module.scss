@@ -1,0 +1,341 @@
+@import "../../../assets/scss/abstracts.scss";
+
+.mainWrapper {
+    overflow-x: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 192rem;
+    height: 1062px;
+    background: url(../../../assets/images/grey-dots.png) top 75px left 170px no-repeat, 
+                url(../../../assets/images/grey-dots.png) bottom 185px right -60px no-repeat $color-white;
+    z-index: 2;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    width: 100%;
+    max-width: 192rem;
+    height: 557px;
+    margin-top: 80px;
+}
+
+.image {
+    position: relative;
+    width: 784px;
+    height: 514px;
+    background-image: url(../../../assets/images/orange-audi.png); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: background-image 0.2s ease-out;
+
+    &:hover {
+        background-image: url(../../../assets/images/orange-audi-hover.png);  
+    }
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+    height: 564px;
+    margin-left: 76px;
+}
+
+.headerContainer {
+    display: flex;
+    width: 75rem;
+    height: 5.5rem;
+    font-size: 50px;
+    font-style: normal;
+    line-height: 55px;
+    letter-spacing: 0.02em;
+    color: $color-black;
+    margin-bottom: 11px;
+}
+  
+.headerText {
+    font-family: Gilroy;
+    font-weight: normal;
+    
+}
+  
+.headerTextStrong {
+    font-family: Gilroy Bold;
+    font-weight: 400;
+    margin-left: 14px;
+}
+
+.step {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    
+    &__container {
+        display: flex;
+        margin-top: 44px;
+    }
+
+    &__number {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 42px;
+        height: 42px;
+        margin-top: 0;
+        background: $color-black;
+        border: 2px solid #000000;
+        border-radius: 50%;
+        color: $color-white;
+    }
+
+    &__textContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 637px;
+        margin-left: 40px;
+        margin-top: 8px;
+    }
+
+    &__header {
+        color: #000000;
+        margin-bottom: 9px;
+        margin-top: 0;
+        text-align: left;
+    }
+
+    &__orange {
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.02em;
+        color: #FF5D00;
+    }
+
+    &__text {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 26px;
+        letter-spacing: 0.02em;
+        color: #000000; 
+    }
+}
+
+.optionsWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 130rem;
+    margin-top: 40px;
+}
+
+.optionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 64rem;
+    height: 16rem;
+    padding: 32px 40px;
+    background: $color-white;
+    box-shadow: 0px 4px 38px rgba(0, 0, 0, 0.09);
+    border-radius: 10px;
+
+    &__header {
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 25px;
+        letter-spacing: 0.03em;
+        color: $color-black;
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        color: #000000;
+    }
+}
+
+.navigationLink {
+    @include button-main;
+    width: 374px;
+    height: 80px;
+    margin-top: 59px;    
+}
+
+@media (min-width: 768px) and (max-width: 1360px) {
+    .mainWrapper {
+        
+        height: auto;
+        background: url(../../../assets/images/grey-dots.png) top 635px left -70px no-repeat, 
+                    url(../../../assets/images/grey-dots.png) bottom 150px right -360px no-repeat $color-white;
+    }
+
+    .mainContainer {
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: center;
+        height: auto;
+        margin-top: 60px;
+        overflow: hidden;
+    }
+
+    .image {
+        width: calc(100% - 22px);
+        height: 371px;
+        margin-right: 22px;
+        margin-top: 60px;
+    }
+
+    .textContainer {
+        width: 728px;
+        height: auto;
+        margin-left: 20px;
+    }
+
+    .headerContainer {
+        width: 72.8rem;
+        height: 4.4rem;
+        font-size: 40px;
+        line-height: 44px;
+        margin-bottom: 11px;
+    }
+
+    .optionsWrapper {
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 72.8rem;
+        margin-top: 47px;
+    }
+
+    .optionContainer {
+        width: 72.8rem;
+        height: 13rem;
+        padding: 25px 0 0 30px;
+        margin-bottom: 25px;
+    }
+
+    .navigationLink {
+        margin-top: 31px; 
+        margin-bottom: 60px;   
+    }
+    
+}
+
+@media (max-width: 767px) {
+
+    .mainWrapper {
+        
+        height: auto;
+        background: url(../../../assets/images/grey-dots.png) top 735px left -320px no-repeat, 
+                    url(../../../assets/images/grey-dots.png) bottom 85px right -360px no-repeat $color-white;
+    }
+
+    .mainContainer {
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-items: center;
+        height: auto;
+        margin-top: 40px;
+        overflow: hidden;
+    }
+
+    .image {
+        width: calc(100% - 22px);
+        height: 297px;
+        margin-right: 22px;
+        margin-top: 60px;
+    }
+
+    .textContainer {
+        width: 280px;
+        height: auto;
+        margin-left: 0;
+    }
+
+    .headerContainer {
+        width: 28rem;
+        height: 3.3rem;
+        font-size: 30px;
+        line-height: 33px;
+        margin-bottom: 5px;
+    }
+
+    .step {
+        font-size: 16px;
+        line-height: 20px;
+        
+        &__container {
+            display: flex;
+            margin-top: 20px;
+        }
+    
+        &__number {
+            width: 31px;
+            height: 31px;
+        }
+    
+        &__textContainer {
+            width: 230px;
+            margin-left: 18px;
+            margin-top: 8px;
+        }
+        
+        &__orange {
+            font-size: 14px;
+            line-height: 23px;
+        }
+    
+        &__text {
+            font-size: 14px;
+            line-height: 23px; 
+        }
+    }
+
+    .optionsWrapper {
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 28rem;
+        margin-top: 34px;
+    }
+
+    .optionContainer {
+        width: 28rem;
+        height: 13rem;
+        padding: 20px;
+        margin-bottom: 20px;
+    
+        &__header {
+            font-size: 14px;
+            line-height: 17px;
+        }
+    
+        &__text {
+            font-size: 14px;
+            line-height: 17px;
+        }
+    }
+
+    .navigationLink {
+        width: 280px;
+        height: 60px;
+        margin-top: 11px; 
+        margin-bottom: 40px;   
+    }
+
+
+}

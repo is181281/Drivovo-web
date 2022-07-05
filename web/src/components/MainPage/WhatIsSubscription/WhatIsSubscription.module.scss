@@ -1,0 +1,155 @@
+@import "../../../assets/scss/abstracts.scss";
+
+.mainWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 192rem;
+  height: 60rem;
+  background-color: #F4F4F4;
+  background-image: url(../../../assets/images/grey-dots.png);
+  background-position: bottom 315px right -165px;
+  background-repeat: no-repeat;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 128.2rem;
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  // width: 83.7rem;
+  margin-top: 8rem;
+  font-size: 50px;
+  font-style: normal;
+  line-height: 55px;
+  letter-spacing: 0.02em;
+  color: $color-black;
+}
+
+.headerText {
+  font-family: Gilroy;
+  font-weight: normal;
+  
+}
+
+.headerTextStrong {
+  font-family: Gilroy Bold;
+  font-weight: 400;
+  margin-left: 14px;
+}
+
+.textContainer {
+  width: 66.6rem;
+  height: 2.4rem;
+  margin-top: 1rem;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.subscriptionItemsContainer {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 128.2rem;
+  height: 27.3rem;
+  margin-top: 5.8rem;
+}
+
+
+@media (min-width: 768px) and (max-width: 1360px) {
+
+  .mainWrapper {
+    height: 83.5rem;
+  }
+
+  .mainContainer {
+    max-width: 72.8rem;
+    align-items: center;
+  }
+
+  .headerContainer {
+    margin-top: 6rem;
+    font-size: 40px;
+    line-height: 44px;
+    width: 72.8rem;
+  }
+
+  .textContainer {
+    height: 2.1rem;
+    width: 72.8rem;
+    margin-top: 2rem;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .subscriptionItemsContainer {
+    flex-direction: row;
+    align-items: center;
+    width: 64.8rem;
+    height: 54.6rem;
+    margin-top: 3.2rem;
+  }
+    
+}
+
+@media (max-width: 767px) {
+  .mainWrapper {
+    height: 104.3rem;
+    background-image: url(../../../assets/images/grey-dots.png);
+    background-position: bottom 315px right -165px;
+    background-repeat: no-repeat;
+  }
+
+  .mainContainer {
+    align-items: center;
+    max-width: 32rem;
+  }
+
+  .headerContainer {
+    display: flex;
+    flex-direction: column;
+    width: 28rem;
+    margin-top: 4rem;
+    font-size: 30px;
+    line-height: 33px;
+  }
+
+  .headerTextStrong {
+    margin-left: 0;
+  }
+
+  .textContainer {
+    width: 28rem;
+    height: 3.4rem;
+    font-size: 14px;
+    line-height: 17px;
+  }
+
+  .subscriptionItemsContainer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 28rem;
+    max-width: 28rem;
+    height: auto;
+    margin-top: 3.4rem;
+  }
+
+}

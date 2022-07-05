@@ -1,0 +1,271 @@
+@import "../../assets/scss/abstracts.scss";
+
+.mainWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 192rem;   
+  }
+
+.headWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 192rem;
+  background-color: $color-black;
+}
+
+.headContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 130rem;
+  height: 14.5rem; 
+}
+
+.sideContainer {
+  width:395px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logoContainer {
+  width: 220px;
+  height: 105px;
+}
+
+.socialLink {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: background-image 0.3s ease-out;
+
+  &__facebook {
+      background-image: url(../../assets/icons/footer-facebook.png); 
+  }
+
+  &__facebook:hover {
+      background-image: url(../../assets/icons/footer-facebook-hover.png); 
+  }
+
+  &__instagram {
+      background-image: url(../../assets/icons/footer-instagram.png); 
+  }
+
+  &__instagram:hover {
+      background-image: url(../../assets/icons/footer-instagram-hover.png); 
+  }
+
+  &__telegram {
+      background-image: url(../../assets/icons/footer-telegram.png); 
+  }
+
+  &__telegram:hover {
+      background-image: url(../../assets/icons/footer-telegram-hover.png);
+  }
+
+  &__linkedin {
+      background-image: url(../../assets/icons/footer-linkedin.png); 
+  }
+
+  &__linkedin:hover {
+      background-image: url(../../assets/icons/footer-linkedin-hover.png);
+  }
+}
+
+.navigationLinksContainer {
+  height: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigationLink {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-white;
+  text-decoration: none;
+  margin-right: 41px;
+  cursor: pointer;
+}
+
+.navigationLink:last-child {
+  margin-right: 0;
+}
+
+.footWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  max-width: 192rem;
+  height: 9rem; 
+  background-color: $color-dark-grey;
+}
+
+.footContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 130rem;
+  height: 9rem; 
+}
+
+.footSideContainer {
+  display: flex;
+  width: 29.5rem;
+  height: 100%;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: $color-white;
+
+  &__left {
+    padding-top: 40px;
+  }
+
+  &__right {
+    align-items: center;
+  }
+}
+
+.carBarLogo {
+  width: 188px;
+  height: 58px;
+  background-image: url(../../assets/images/carbar-footer-logo.png);
+  mix-blend-mode: lighten;
+  transition: background-image 0.3s ease-out;
+  margin-left: 21px;
+}
+
+.carBarLogo:hover {
+  background-image: url(../../assets/images/carbar-footer-logo-hover.png);
+}
+
+
+@media (min-width: 768px) and (max-width: 1360px) {
+
+  .headWrapper {
+    justify-content: center;
+  }
+
+  .headContainer {
+    align-items: flex-start;
+    height: 23.3rem; 
+  }
+
+  .sideContainer {
+    width:220px;
+    height: 151px;
+    margin: 22px 0 0 20px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .navigationLinksContainer {
+    height: 110px;
+    width: 402px;
+    flex-wrap: wrap;
+    margin-top: 63px;
+    margin-right: 87px;
+  }
+
+  .navigationLink {    
+    height: 20px;
+    width: 201px;    
+    margin-right: 0;
+  }
+
+  .footContainer {
+    width: calc(100% - 40px);
+  }
+}
+
+@media (max-width: 767px) {
+  
+  .headContainer{
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 47.8rem;
+  }
+
+  .sideContainer {
+    width:auto;
+    height: 11rem;
+    flex-direction: column;
+    margin-top: 22px;
+  }
+
+  .logoContainer {
+    width: 140px;
+    height: 67px;
+  }
+
+  .navigationLinksContainer {
+    margin-top: 41px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .navigationLink {
+    margin-bottom: 26px;
+    margin-right: 0px;
+  }
+  
+  .navigationLink:last-child {
+    margin-bottom: 0;
+  }
+
+  .footWrapper {
+    height: 19rem; 
+  }
+
+  .footContainer {
+    flex-direction: column-reverse;
+    width: calc(100% - 40px);
+    height: 19rem; 
+  }
+
+  .footSideContainer {
+    display: flex;
+    flex-direction: column;
+    width: 18.8rem;
+    font-size: 14px;
+    line-height: 17px;
+  
+    &__left {      
+      padding-top: 0;
+      height: 17px;
+      align-items: center;
+      margin-bottom: 30px;
+    }
+  
+    &__right {
+      margin-top: 34px;
+      align-items: center;
+      height: 85px;
+    }
+  }
+
+  .carBarLogo {
+    margin-left: 0;
+  }
+  
+}

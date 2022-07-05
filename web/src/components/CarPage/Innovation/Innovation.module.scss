@@ -1,0 +1,203 @@
+@import "../../../assets/scss/abstracts.scss";
+
+.mainWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    max-width: 192rem;  
+    background: url(../../../assets/images/dark-grey-dots.png) bottom 90px left -20px no-repeat $color-black;
+  }
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  width: 593px;
+  margin-right: 47px;
+}
+
+.headerContainer {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+}
+
+.header {
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 55px;
+  letter-spacing: 0.02em;
+  color: $color-white;
+}
+
+.headerStrong {
+  font-family: Gilroy Bold;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 57px;
+  letter-spacing: 0.02em;
+  color: $color-white;
+  margin-left: 12px;
+}
+
+.textList {
+    padding-inline-start: 0;
+    list-style: none;
+
+    &__item {
+        display: flex;
+        justify-content: start;
+        margin-top: 45px;
+        width: 585px;
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.02em;
+        color: $color-white;
+    }
+
+    &__item:first-child {
+        margin-top: 32px;
+    }
+
+    &__item::before {
+        content: "\2022";
+        color: $color-orange;
+        font-size: 24px;
+        font-weight: bold;
+        display: inline-block;        
+        margin-right: 25px;
+    }
+}
+
+.imageWrapper {
+  overflow: hidden;
+  width: calc(100% - 660px);
+  max-width: 970px;
+  height: 641px;
+}
+
+.image {
+  width: 970px;  
+  height: 641px;
+}
+
+@media (min-width: 768px) and (max-width: 1360px) {
+  .mainWrapper {
+    flex-direction: column-reverse;   
+    background: url(../../../assets/images/dark-grey-dots-320.png) bottom 430px right -20px no-repeat $color-black;
+  }
+
+  .textWrapper {
+    align-items: center;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .headerContainer {
+    width: 51rem;
+    margin-top: 60px;
+  }
+
+  .header {
+    font-size: 40px;
+    line-height: 44px;
+  }
+  
+  .headerStrong {
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  .textList {
+    margin-bottom: 80px;
+
+    &__item {
+        margin-top: 28px;
+        width: 697px;
+    }
+}
+
+
+.imageWrapper {
+  width: 100%;
+  height:auto;
+}
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .mainWrapper {
+    flex-direction: column-reverse;   
+    background: url(../../../assets/images/dark-grey-dots-320.png) bottom 500px right -20px no-repeat $color-black;
+  }
+
+  
+.textWrapper {
+  align-items: center;
+  width: 100%;
+  margin-right: 0;
+}
+
+.headerContainer {
+  width: 28rem;
+  margin-top: 40px;
+  flex-direction: column;
+}
+
+.header {
+  font-size: 30px;
+  line-height: 33px;
+}
+
+.headerStrong {
+  font-size: 30px;
+  line-height: 33px;
+  margin-left: 0;
+}
+
+.textList {
+  margin-bottom: 50px;
+
+  &__item {
+      margin-top: 20px;
+      width: 280px;
+      font-size: 14px;
+      line-height: 23px;
+  }
+
+  &__item:first-child {
+      margin-top: 25px;
+  }
+
+  &__item::before {      
+      margin-right: 15px;
+  }
+}
+
+.imageWrapper {
+  width: 100%;
+  height:auto;
+}
+
+  .image {
+    width: 100%;
+    height: auto;
+  }
+
+}

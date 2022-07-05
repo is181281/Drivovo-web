@@ -1,0 +1,119 @@
+@import "../../../assets/scss/abstracts.scss";
+
+.mainWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background: $color-black;
+    border-radius: 10px;
+    width: 783px;
+    height: 490px;
+}
+
+.image {
+    margin-top: 104px;
+    width: 169px;
+    height: 131px;
+}
+
+.header {
+    font-family: Gilroy Bold;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 55px;
+    letter-spacing: 0.02em;
+    color: #FFF;
+    white-space: pre-wrap;
+    text-align: center;
+    margin-top: 71px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+
+.text {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.02em;
+    color: #FFF;
+    white-space: pre-wrap;
+    text-align: center;
+    margin-top: 11px;
+}
+
+.closeButton {
+    background-image: url(../../../assets/icons/close-button.png);
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: -45px;
+    right: -45px;
+    width: 45px;
+    height: 45px;
+    cursor: pointer;       
+    
+}
+
+
+@media (min-width: 768px) and (max-width: 1360px) {
+    .mainWrapper {
+        width: 640px;
+        height: 400px;
+    }
+
+    .image {
+        margin-top: 70px;
+    }
+
+    .header {
+        font-size: 40px;
+        line-height: 44px;
+        margin-top: 40px;
+    }
+
+    .text {
+        font-size: 19px;
+        line-height: 22px;
+        margin-top: 11px;
+    }
+}
+
+@media (max-width: 767px) {
+    .mainWrapper {
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+
+    .image {
+        margin-top: 80px;
+    }
+
+    .header {
+        font-size: 30px;
+        line-height: 33px;
+        margin-top: 71px;
+    }
+
+    .text {
+        font-size: 16px;
+        line-height: 19px;
+        margin-top: 11px;
+    }
+
+    .closeButton {
+        background-image: url(../../../assets/icons/close-icon.png);
+        top: 25px;
+        right: 20px;
+        width: 22px;
+        height: 22px;    
+    }
+
+
+}

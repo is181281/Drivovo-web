@@ -1,0 +1,115 @@
+@import "../../assets/scss/abstracts.scss";
+
+.mainWrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 192rem;
+    background: url(../../assets/images/grey-dots.png) top 85px left -256px no-repeat,
+                url(../../assets/images/grey-dots.png) bottom 52px right -7px no-repeat $color-white;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 130rem;
+}
+
+.headerContainer {
+    display: flex;
+    width: 100%;
+    max-width: 130rem;
+    height: 5.5rem;
+    margin-top: 7.7rem;
+    font-size: 50px;
+    font-style: normal;
+    line-height: 55px;
+    letter-spacing: 0.02em;
+    color: $color-black;
+  }
+  
+.headerText {
+font-family: Gilroy;
+font-weight: normal;
+
+}
+  
+.headerTextStrong {
+font-family: Gilroy Bold;
+font-weight: 400;
+margin-left: 14px;
+}
+
+.conditionsContainer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 130rem;
+    margin-top: 75px;
+}
+
+.button {
+    @include button-main;
+    width: 374px;
+    height: 80px;
+    margin-top: 21px;  
+
+}
+
+@media (min-width: 768px) and (max-width: 1360px) {
+
+    .mainContainer {
+        max-width: 72.8rem;
+    }
+
+    .headerContainer {
+        max-width: 72.8rem;
+        height: 4.4rem;
+        margin-top: 6.1rem;
+        font-size: 40px;
+        line-height: 44px;
+      }
+
+    .conditionsContainer {
+        flex-direction: column;
+        justify-content: flex-start;
+        max-width: 72.8rem;
+        margin-top: 60px;
+    }
+
+    
+}
+
+@media (max-width: 767px) {
+
+    .mainContainer {
+        max-width: 28rem;
+    }
+
+    .headerContainer {
+        max-width: 30.8rem;
+        height: 3.3rem;
+        margin-top: 4rem;
+        font-size: 30px;
+        line-height: 33px;
+        letter-spacing: 0;
+      }
+
+    .conditionsContainer {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .button {
+        width: 280px;
+        height: 60px;
+        margin-top: 43px; 
+    }
+}

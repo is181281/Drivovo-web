@@ -1,0 +1,231 @@
+@import "../../../assets/scss/abstracts.scss";
+
+.mainWrapper {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 530px;
+    height: 100vh;
+    background: $color-black;
+    z-index: 10;
+    transition: transform 0.3s ease;
+
+    &__closed {
+        transform: translateX(100%);
+    }
+
+    &__opened {
+        transform: translateX(0%);
+    }
+}
+
+.header {
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+        border: 1px solid $color-dark-grey;
+    }
+
+    &__text {
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 20px;
+        color: $color-white;
+        text-transform: uppercase;
+        margin-left: 45px;
+    }
+
+    &__closeButton {
+        width: 22px;
+        height: 22px;
+        cursor: pointer;
+        margin-right: 40px;
+    }
+}
+
+.languageSelectContainer {
+    display: none;
+}
+
+.mainNavigationLinksContainer {
+    display: none;
+}
+
+.navigationLinksContainer {
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 62px;
+  }
+  
+  .navigationLink {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    width: 420px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: $color-white;
+    text-decoration: none;
+    margin-bottom: 41px;
+    cursor: pointer;
+  }
+  
+  .navigationLink:last-child {
+    margin-bottom: 0;
+  }
+
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 206px;
+    border: 1px solid $color-dark-grey;
+    padding-top: 51px;    
+}
+
+@media (min-width: 768px) and (max-width: 1360px) {
+    .mainWrapper {
+        width: 450px;
+    }
+
+    .header {
+            
+        &__text {            
+            margin-left: 71px;
+        }
+    }
+
+         
+    .navigationLink {        
+        width: 310px;        
+      }          
+  }
+
+
+@media (max-width: 767px) {
+    .mainWrapper {
+        width: 100%;
+    }
+
+    .header {
+        &__container {
+            height: 70px;
+        }
+    
+        &__text {
+            margin-left: calc(50% - 135px);
+        }
+    
+        &__closeButton {
+            margin-right: calc(50% - 135px);
+        }
+    }
+
+    .languageSelectContainer {
+        display: flex;
+        width: 57px;
+        height: 22px;
+        margin-left: 27px;
+        margin-right: 25px;
+    }
+
+    .languageSelect {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        width: 40px;
+        height: 22px;
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        color: $color-grey;
+        border-right: 1px solid $color-grey;
+        cursor: pointer;
+    
+        &__active {
+            color: $color-white;
+        }
+    }
+    
+    .languageSelect:last-child {
+        border-right: none;
+        justify-content: end;
+        width: 32px;
+    }
+
+    .mainNavigationLinksContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 9rem;
+        margin-top: 44px;
+    }
+
+    .mainNavigationLink {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 19px;
+        width: 280px;
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: $color-white;
+        text-decoration: none;
+        margin-bottom: 15px;
+        cursor: pointer;
+
+        &:last-child {
+            margin-bottom: 0;   
+        }
+      }
+
+    .navigationLinksContainer {
+        justify-content: flex-start;
+        align-items: center;
+        padding-top: 58px;
+      }
+      
+      .navigationLink {
+        justify-content: center;
+        height: 19px;
+        width: 280px;
+        font-weight: 400;
+        color: $color-grey;
+        margin-bottom: 15px;
+      }
+      
+      .navigationLink:last-child {
+        margin-bottom: 0;
+      }
+
+
+    .footer {
+        height: 107px;
+        padding-top: 41px;    
+    }
+
+
+}

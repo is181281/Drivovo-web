@@ -1,0 +1,116 @@
+@import "../../../assets/scss/abstracts.scss";
+
+.mainWrapper {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  max-width: 192rem;
+  height: 77.6rem;  
+  background: url(../../../assets/images/test-drive-background-image.png);
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 86rem;
+  height: 77.6rem; 
+  background: rgba(35,31,32,0.93);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 48rem;
+    margin-right: 7rem;
+}
+
+.text {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 41px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    white-space: pre-line;    
+
+    &__strong {
+        font-weight: 700;
+    }
+}
+
+
+.navigationLink {
+    @include button-main;
+    width: 320px;
+    height: 80px;
+    margin-top: 59px;    
+}
+
+@media (min-width: 768px) and (max-width: 1360px) {
+  .mainWrapper {
+    height: 58.7rem;  
+    background: url(../../../assets/images/test-drive-background-image.png) top 0px left -150px no-repeat;
+    background-size: cover;
+  }
+
+  .mainContainer {
+    width: 100%;
+    max-width: 37.7rem;
+    height: 58.7rem; 
+    background: transparent;
+    margin-left: 21px;
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 37.7rem;
+    margin-right: 0;
+  }
+
+  .text {
+    font-size: 28px;
+    line-height: 38px;
+  }
+    
+}
+
+
+@media (max-width: 767px) {
+
+.mainWrapper {
+  height: 58.9rem;  
+  background: url(../../../assets/images/test-drive-background-image.png) top 0px left -1000px no-repeat;
+}
+
+.mainContainer {
+  align-items: flex-end;
+
+  width: 100%;
+  max-width: 32rem;
+  height: 58.9rem; 
+  background: transparent;
+}
+
+.content {
+    width: 28rem;
+    margin-right: 0;
+}
+
+.text {
+    font-size: 20px;
+    line-height: 27px;
+}
+
+  .navigationLink {
+    width: 280px;
+    height: 60px;
+    margin-top: 40px;  
+    margin-bottom: 90px;  
+}
+
+}

@@ -1,0 +1,128 @@
+@import "../../../assets/scss/abstracts.scss";
+
+.mainWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 192rem;
+  height: 18.6rem;  
+  
+
+  &__dark {
+    background: $color-black;
+  }
+
+  &__light {
+    background: #F4F4F4;
+  }
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 130rem;
+  height: 18.6rem;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.text {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    
+
+    &__dark {
+      color: #FFFFFF;
+    }
+  
+    &__light {
+      color: $color-black;
+    }
+
+    &__header {
+        font-family: Gilroy Bold;
+        margin-bottom: 14px;
+        font-size: 30px;
+        line-height: 33px;
+        font-weight: 900;
+    }
+}
+
+
+.button {
+    @include button-main;
+    width: 374px;
+    height: 80px;    
+}
+
+@media (min-width: 768px) and (max-width: 1360px) {
+
+  .mainContainer {
+    width: 72.8rem;
+    height: 16.6rem;
+  }
+
+  .textContainer {
+    width: 36.5rem;
+}
+
+  .text {
+    &__header {
+        margin-bottom: 10px;
+        font-size: 28px;
+        line-height: 31px;
+    }
+}
+
+
+  .button {
+    width: 332px;    
+}
+    
+}
+
+
+@media (max-width: 767px) {
+
+
+  .mainWrapper {
+    height: 32.5rem;
+  }
+
+  .mainContainer {
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 28rem;
+    height: 32.5rem; 
+  }
+
+  .textContainer {
+    margin: 28px 0 31px 0;
+}
+
+  .text {
+
+    &__header {
+        margin-bottom: 20px;
+        font-size: 28px;
+        line-height: 31px;
+    }
+}
+
+  .button { 
+    width: 280px;
+    height: 60px;    
+  }
+
+}

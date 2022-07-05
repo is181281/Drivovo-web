@@ -1,0 +1,118 @@
+@import "../../../assets/scss/abstracts.scss";
+
+.mainWrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 192rem;
+    height: 50.8rem;
+    background-color: #F4F4F4;
+    background-image: url(../../../assets/images/grey-dots.png);
+    background-position: top 73px left -194px;
+    background-repeat: no-repeat;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 90rem;
+}
+
+.portrait {
+    height: 107px;
+    width: 107px;
+    margin-top: 80px;
+}
+
+.name {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: $color-black;
+    margin-top: 19px;
+}
+
+.position {
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #231F20;
+    margin-top: 4px;
+}
+
+.quoteImage {
+    height: 35px;
+    width: 38px;
+    margin-top: 34px;
+}
+
+.quote {
+    width:  87rem;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #000000;
+    margin-top: 18px;
+}
+
+@media (min-width: 768px) and (max-width: 1360px) {
+    .mainContainer {
+        max-width: 72.8rem;
+    }
+
+    .quote {
+        width:  72.8rem;
+    }
+    
+}
+
+
+@media (max-width: 767px) {
+    
+    .mainContainer {
+        max-width: 20rem;
+    }
+
+    .portrait {
+        margin-top: 45px;
+    }
+
+    .name {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .position {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .quoteImage {
+        height: 23px;
+        width: 26px;
+        margin-top: 26px;
+    }
+    
+    .quote {
+        width:  19.4rem;
+        font-size: 14px;
+        line-height: 21px;
+        margin-top: 13px;
+    }
+
+}

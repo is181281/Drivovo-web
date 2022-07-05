@@ -1,0 +1,196 @@
+@import "../../../assets/scss/abstracts.scss";
+
+.mainWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 192rem;
+  height: 47rem;  
+  background: transparent;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 130rem;
+}
+
+.headerContainer {
+    display: flex;
+    width: 83.7rem;
+    height: 5.5rem;
+    font-size: 50px;
+    font-style: normal;
+    line-height: 55px;
+    letter-spacing: 0.02em;
+    color: $color-black;
+}
+  
+.headerText {
+    font-family: Gilroy;
+    font-weight: normal;
+    
+}
+  
+.headerTextStrong {
+    font-family: Gilroy Bold;
+    font-weight: 400;
+    margin-left: 14px;
+}
+
+.partnersContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 130rem;
+    margin-top: 82px;
+    height: 173px;
+    padding: 0px 0px 0px 0px;    
+}
+
+.partnerContainer {
+    width: 173px;
+    height: 173px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partner {
+    background-position-x: center;
+    background-position-y: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 173px;
+    height: 173px;
+    transition: background-image 0.3s ease-out;
+
+    &__bmw {
+        background-image: url(../../../assets/images/bmw.png); 
+    }
+
+    &__bmw:hover {
+        background-image: url(../../../assets/images/bmw-hover.png); 
+    }
+
+    &__audi {
+        background-image: url(../../../assets/images/audi.png); 
+    }
+
+    &__audi:hover {
+        background-image: url(../../../assets/images/audi-hover.png); 
+    }
+
+    &__volkswagen {
+        background-image: url(../../../assets/images/volkswagen.png); 
+    }
+
+    &__volkswagen:hover {
+        background-image: url(../../../assets/images/volkswagen-hover.png); 
+    }
+
+    &__volvo {
+        background-image: url(../../../assets/images/volvo.png); 
+    }
+
+    &__volvo:hover {
+        background-image: url(../../../assets/images/volvo-hover.png); 
+    }
+
+    &__toyota {
+        background-image: url(../../../assets/images/toyota.png); 
+    }
+
+    &__toyota:hover {
+        background-image: url(../../../assets/images/toyota-hover.png); 
+    }
+
+    &__peugeot {
+        background-image: url(../../../assets/images/peugeot.png); 
+    }
+
+    &__peugeot:hover {
+        background-image: url(../../../assets/images/peugeot-hover.png); 
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1360px) {
+
+    .mainWrapper {
+        height: 34rem;  
+      }
+
+    .mainContainer {
+        max-width: 72.8rem;
+      }
+
+      .headerContainer {
+        width: 72.8rem;
+    }
+
+    .partnersContainer {
+        flex-wrap: wrap;
+        overflow: hidden;
+        max-width: 72.8rem;
+        margin-top: 40px;
+        height: 160px;
+        padding: 0px 0px 0px 0px;    
+    }
+
+    .partnerContainer {
+        width: 160px;
+        height: 160px;
+    }
+
+    .partner {
+        width: 160px;
+        height: 160px;
+    }
+    
+}
+
+
+@media (max-width: 767px) {
+
+    .mainWrapper {
+        height: 41rem;  
+      }
+
+    .mainContainer {
+        max-width: 28rem;
+      }
+
+
+    .headerContainer {
+        width: 28rem;
+        height: 3.3rem;
+        font-size: 30px;
+        line-height: 33px;
+    }
+
+    .partnersContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: space-between;
+        flex-wrap: wrap;
+        max-width: 28rem;
+        margin-top: 23px;
+        height: 280px;   
+        overflow: hidden;
+    }
+
+    .partnerContainer {
+        width: 130px;
+        height: 130px;
+        margin-bottom: 20px;
+    }
+
+    .partner {
+        width: 130px;
+        height: 130px;
+        margin-bottom: 20px;
+    }
+}

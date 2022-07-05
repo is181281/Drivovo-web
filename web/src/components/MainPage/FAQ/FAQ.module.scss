@@ -1,0 +1,139 @@
+@import "../../../assets/scss/abstracts.scss";
+
+.mainWrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 192rem;
+    background: url(../../../assets/images/grey-dots.png) top 180px left -260px no-repeat,
+                url(../../../assets/images/grey-dots.png) bottom 463px right -36px no-repeat $color-white;
+    z-index: 2;
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 130rem;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 62px;
+    font-size: 50px;
+    font-style: normal;
+    line-height: 55px;
+    letter-spacing: 0.02em;
+    color: $color-black;
+    margin: 75px 0 42px 0;
+}
+
+.headerText {
+    font-family: Gilroy;
+    font-weight: normal;    
+}
+  
+.headerTextStrong {
+    font-family: Gilroy Bold;
+    font-weight: 900;
+    margin-left: 0px;
+}
+
+.navigationLink {
+    align-items: center;
+    height: 20px;
+    width: 151px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: $color-black;
+    text-decoration: none;
+    cursor: ponter;
+
+    &__top {
+        display: flex;
+    }
+
+    &__bottom {
+        display: none;
+    }
+
+    &:hover {
+        color: $color-orange; 
+    }
+
+    &:hover &__arrow{
+        background: url(../../../assets/icons/link-arrow-orange.png) no-repeat; 
+    }
+
+    &__arrow{
+        display: flex;
+        height: 10px;
+        width: 30px;
+        background: url(../../../assets/icons/link-arrow-black.png) no-repeat;
+        margin-right: 21px;
+    }
+}
+
+.questionContainer {
+    max-width: 100%;
+    width: 130rem;
+}
+
+@media (min-width: 768px) and (max-width: 1360px) {
+
+    .mainContainer {
+        max-width: 72.8rem;
+    }
+
+    .questionContainer {
+        max-width: 72.8rem;
+        width: 100%;
+    }
+
+}
+
+
+
+@media (max-width: 767px) {
+
+    .mainWrapper {
+        background: url(../../../assets/images/grey-dots-320.png) top 117px left 10px no-repeat,
+                    url(../../../assets/images/grey-dots-320.png) top 317px right 0px no-repeat,
+                    url(../../../assets/images/grey-dots-320.png) bottom 580px left 10px no-repeat $color-white;  
+        }
+
+    .mainContainer {
+        max-width: 28rem;
+    }
+
+    .headerContainer {
+        justify-content: flex-start;
+        height: 67px;
+        font-size: 30px;
+        line-height: 33px;
+        margin: 40px 0 20px 0;
+    }
+
+    .navigationLink {
+    
+        &__top {
+            display: none;
+        }
+
+        &__bottom {
+            margin: 0 0 33px 0;
+            display: flex;
+        }
+    } 
+
+}

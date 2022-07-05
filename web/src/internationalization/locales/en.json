@@ -1,0 +1,347 @@
+{
+    "LinkNames": {
+        "Main": "Home",
+        "Conditions": "Terms and conditions",
+        "ForBusiness": "For business",
+        "FAQ": "Frequently asked questions",
+        "ReferralProgram": "Referral Program",
+        "PublicOffer": "Public offer",
+        "AboutUs": "About Us",
+        "ChoseCar": "Chose Car",
+        "Menu": "Menu"
+    },
+    "MainPage": {
+        "Promo": {
+            "Header": "Cars by subscription - ",
+            "HeaderStrong": "the first service in Ukraine",
+            "Text": "A new experience that is smarter than a loan \nor purchase",
+            "Link": "Help choose a car",
+            "SelectPlaceholder": "Choose your new car",
+            "SelectButton": "Choose"
+        },
+        "Benefits": {
+            "ServiceExpenses": "All costs at the expense of service",
+            "InstantRegistration": "Instant Registration",
+            "FirstPayment": "Low first payment",
+            "WowService": "WOW from the service"
+        },
+        "WhatIsSubscription": {
+            "Header": "What is a subscription",
+            "HeaderStrong": "on the car?",
+            "Text": "The monthly subscription includes all operating costs, except for fuels and lubricants:"
+        },
+        "SubscriptionItems": {
+            "Item1": "Car registration + payment of taxes (PF, luxury tax)",
+            "Item2": "CASCO, MTPL cover",
+            "Item3": "Maintenance (MA)",
+            "Item4": "Maintenance driver - eliminates traffic jams and waiting at the service station",
+            "Item5": "Set of winter tires + storage + tire service",
+            "Item6": "Replacement car during warranty repairs",
+            "Item7": "Access to the “Drivovo Emotion Hub” fleet",
+            "Item8": "Credit history protection"
+        },
+        "HowItWorks": {
+            "Header": "How does",
+            "HeaderStrong": "it work?",
+            "Step1": {
+                "Header": "Choose a car and book a FUN-style test drive",
+                "Orange": "FUN-style test drive ",
+                "Text": "is when the car comes to you at a convenient time and place."
+            },
+            "Step2": {
+                "Header": "You can pick up the car directly from the test drive!",
+                "Orange": "30 minutes - and car is yours! ",
+                "Text": "Ultra-fast SMART-scoring, passport, ID and driver's license are all you need to get off the test drive in your new car."
+            },
+            "Step3": {
+                "Header": "Take time for really important things and become +1 to \nDrivovo Pride!",
+                "Orange": "Drivovo Pride ",
+                "Text": "is a community of like-minded people who enjoy the DRIVOVO SMART service WITHOUT LIMITS"
+            },
+            "Option1Header": "Subscription period 36 months",
+            "Option1Text": "After 3 years you have the right to register the car onto your name, making the last payment in amount of its residual value",
+            "Option2Header": "The first payment",
+            "Option2Text": "This is a first payment that consists of payment for the first month of subscription and the last 3-5 months. (Depends on car class)",
+            "Button": "Become +1 of Drivovo Pride!"
+        },
+        "WhatIsYours": {
+            "Header": "Which one ",
+            "HeaderStrong": "is yours?",
+            "Link": "All offers",
+            "Text": "Drive Hub - gone in 30 minutes"
+        },
+        "DontFoundYours": {
+            "Header": "Didn't find yours?",
+            "HeaderFAQ": "Didn't find the answer to your question?",
+            "Text": "Our consultants will be happy to help you choose a car that meets your criteria",
+            "Link": "Click here - let's talk"
+        },  
+        "TestDrive": {
+            "Text": "Sign up for a test drive and \nBecome +1 of our Pride!",
+            "TextStrong": "It will be a drive!"
+        },
+        "Reviews":{
+            "Header": "Our feedback",
+            "HeaderStrong": "customers",
+            "Link": "All reviews"
+        },
+        "FAQ": {
+            "Header": "Frequently asked",
+            "HeaderStrong": " questions",
+            "Link": "All questions"
+        },
+        "DrivePartners": {
+            "Header": "Drive",
+            "HeaderStrong": "Partners"
+        },
+        "Founder": {
+            "Name": "Maxim Solovyov",
+            "Position": "Founder Drivovo",
+            "Quote": "Enough compromises. Use your car without spending time on its maintenance and sale. Only speed, only comfort, only pleasure, no routine."
+        }
+    },
+    "FAQPage": {
+        "Header": "Frequently asked ",
+        "HeaderStrong": "questions",
+        "Text": "Use the search or find the question that interests you from the list"
+    },
+    "CarsPage": {
+        "Header": "Drivovo  ",
+        "HeaderStrong": "Fleet",
+        "Text": "Which one is yours?"
+    },
+    "CarPage": {
+        "Model": "Model",
+        "Link": "Go to the directory",
+        "Parameters": "Features",
+        "Economics": {
+            "totalPrice": "The cost of your car",
+            "firstMonthCost": "The first month of subscription",
+            "period": "Subscription period",
+            "warrantyDeposit": "Guarantee deposit",
+            "price": "Subscription cost per month",
+            "totalFirstPayment": "First payment and go",
+            "cost3years": "The cost of ownership for 3 years",
+            "lastPayment": "Residual value",
+            "months": "months"
+        },
+        "Button": "Go Drivovo",
+        "WhatIsSubscription": {
+            "Header": "What's under the hood of the subscription",
+            "HeaderStrong": "drivovo"
+        },
+        "Innovation": {
+            "Header": "Innovation",
+            "HeaderStrong": "innovators",
+            "Text1": "Here everything is aimed at making every trip as comfortable as possible for you. With the multifunction steering wheel, for example, you can control many functions without taking your hands off the steering wheel.",
+            "Text2": "You can get all the benefits at once! Plenty of space for passengers and luggage. Add another advantage of the SUV - high off-road landing.",
+            "Text3": "Sit down, lean back and relax. In the cabin you will find comfortable seats with leather upholstery and color accents, as well as a panoramic lifting and sliding roof, which opens up great prospects for all passengers."
+        }
+    },
+    "ConditionsPage": {
+        "Header": "Our",
+        "HeaderStrong": "conditions",
+        "Name1": "Payment",
+        "Text1": "The first payment consists of one month subscription and warranty payment (3-5 months from the monthly subscription, depending on the car class)",
+        "Name2": "Limits",
+        "Text2": "Annual mileage - up to 30,000 km. If the limit is exceeded, a surcharge of one monthly payment",
+        "Name3": "Experience",
+        "Text3": "Driving experience from 2 years or after a test drive with us and determining the level of driving",
+        "Name4": "Age",
+        "Text4": "You must be 24 years old, but not older than 55 years.",
+        "Name5": "Subscription",
+        "Text5": "Subscription period - 36 months. At your request, change the car to a more expensive / cheaper without extra losses.",
+        "Name6": "Always on wheels",
+        "Text6": "If your car is spent on warranty repairs - you can always get a replacement car from us on special terms.",
+        "Button": "Learn more"
+    },
+    "ForBusinessPage": {
+        "Header": "The first subscription car",
+        "HeaderStrong": " service in Ukraine",
+        "Text": "It's about how to drive a car, free your head and \ntime for really important things!",
+        "Preferences": {
+            "Name1": "Outsourced fleet",
+            "Text1": "Owning a car fleet is difficult, you need to hire mechanics, manage operations and if before the only solution was expensive rental or complex leasing, now the miracle subscription rules: I let go of everyone and just drive a car.",
+            "Name2": "The most pleasant thing",
+            "Text2": "Your employee has contributed a lot to the company, but money is no longer very motivating. Give him a brand new car whilst he works for you!",
+            "Name3": "Convincing Sign-up bonus",
+            "Text3": "Have you found a colleague who can be very useful, but he still doesn't work for you? Sign-up bonus in the form of a new car for a year will be a cool chip to sway him your side."
+        },
+        "Button": "Download offer"
+    },
+    "AboutUsPage": {
+        "Header": "Our ",
+        "HeaderStrong": "values",
+        "Values": {
+            "Name1": "Freedom",
+            "Text1": "When you spend time on something that gives you a high, not on a maintenance routine",
+            "Name2": "Security",
+            "Text2": "When you know that your credit history will be perfect and your car will be fully insured.",
+            "Name3": "Feeling",
+            "Text3": "When you remove the protective films for the first time and smell the new interior",
+            "Name4": "Flexibility",
+            "Text4": "When you decide how much you drive and how you pay"
+        },
+        "Button": "Go Drivovo",
+        "Founder": {
+            "Header": "Maxim",
+            "HeaderStrong": "Solovyov"
+        }
+    },
+    "MailingForm": {
+        "Header": "",
+        "HeaderStrong": "Feedback",
+        "NamePlaceholder": "Your name",
+        "PhonePlaceholder": "Your phone",
+        "EmailPlaceholder": "Your e-mail",
+        "SocialLinkPlaceholder": "Profile in any social network",
+        "Text__popup": "Leave your contact details and our consultants will contact you shortly",
+        "Text__fullscreen": "Leave an application and we will prepare a special offer for you",
+        "Button": "Send",
+        "ConfirmationMessageHeader": "Your message has been successfully sent.",
+        "ConfirmationMessage": "We will contact you very soon!"
+    },
+    "FAQ": {
+        "Question1": "What is a subscription car?",
+        "Answer1": "Subscription is the future of auto retail. Regular monthly payments gets you your own car with insurance, technical service and legal support. Subscription is a new smart way to have a car.",
+        "Question2": "How is Drivovo different from a loan?",      
+        "Answer2": "When you get a loan, you buy only money and inconvenience along with hidden fees. Drivovo calculates the cost of owning a car in terms of month, year, three years and it is more profitable than loan. The bank is not responsible for the operation of your car, and sells only money, you are not their priority afterwards. Drivovo provides convenient service throughout the whole subscription time. With the bank in case of an accident, all the hassles fall on you, and the insurance pay-out is expected to be made within next 4 months.Drivovo starts repairs without waiting for the insurance to be paid, but immediately upon receipt of defects and spare parts list.",
+        "Question3": "How is Drivovo different from regular rental?",
+        "Answer3": "Usually cars used for rent are aged 2-5 years; \nDrivovo are new cars without mileage; \nTo rent, you choose from what is in the fleet; \nIn Drivovo we select cars according to your wishes: color, equipment, model; \nWhen renting, you cannot buy a car and keep it for yourself; \nWith Drivovo in 2-3 years the car can pass into your possession with re-registration onto your name. \nFor example, you rented a car for a year for $1,500 per month. When you return the car, all your payments have covered car rental only. \nIn our service the subscription fee includes the cost of the car, and at the end of the term you will have the right of redemption, subject to payment of the residual value.",
+        "Question4": "The monthly subscription includes all operating costs:",
+        "Answer4": "● Pension fund and registration fees \n● CASCO 3 years (0% deductible for car accident, 5% deductible for car theft) \n● MTPL cover - 3 years \n● Luxury tax (if payable) \n● MOT for 3 years - 90,000 km \n● Winter and summer tire set \n● Tire service - storage, tire fitting, for 3 years \n● The driver who will do maintenance and tire fitting of your car \n● Option to change cars to a higher or lower class with no extra expenses \n\n<strong>You have only three commitments to us:</strong> \n1. Enjoy the ride and service every day. \n2. Pay your subscription on time once a month. \n3. Recommend our service to friends and receive bonuses for it.",
+        "Question5":"What is the cost of owning a car? How is it calculated?",
+        "Answer5":"Cost of ownership = price of the car + worth of the loan (if the car is bought with attraction of credit funds) + all expenses during operation - the residual value. So, you get cost of ownership for 36, 12 or 1 month. \nWhen calculating the cost of the subscription and comparing it with the purchase of a car for cash or on credit, we take into account the following costs: \n1. The cost of cars in salon. \n2. Payment to the Pension Fund. \n3. Luxury tax, if any. \n4. Registration in IRED (Interdistrict Registration and Examination Department). \n5. CASCO for 3 years. \n6. MTPL cover for 3 years. \n7. MOT based on the mileage of 30,000 km per year, for 3 years (done on the basis of maintenance maps of MOT stations for given car brand). \n8. Set of seasonal tires. \n9. Tire fitting for 3 years (6 times). \n10. Tire storage. \nThe cost of equity is the value of money you spend paying the car out in full. That is, instead of buying a car your money could generate you a profit (real estate, business, shares, trading operations). We consider the conservative value of money, which is provided, for example, by real estate investment at 7% per annum",
+        "Question6": "What is the subscription signing process?",
+        "Answer6": "1. Choose a car.\n2. We coordinate the calculation of the cost of the service with comparative analysis of purchase and credit. \n3. Take a personal scoring and test drive. \n4. Sign the subscription (contract, invoice). \n5. We pass the keys to the new car. \nDeal completion time - from 20 minutes.",
+        "Question7": "Can I unsubscribe before the end of my subscription term?",
+        "Answer7": "You can. We simply withhold the amount of the guaranteed deposit. Alternatively, you can bring a client instead of you - we will return the deposit in full. We are the first company in Ukraine that actually does not have penalties.",
+        "Question8": "What is the form of subscription payment?",
+        "Answer8":"Form of payment: non-cash payment. Payment is made to the company's current account in national currency. Since we are loyal to our customers, exceptions are possible.",
+        "Question9":"Can I pay for several months in advance?",
+        "Answer9":"Yes, in this case you will have the freedom to choose, for example, not to pay in one of the months. The payment schedule is formed individually with each client.",
+        "Question10":"In what currency will I pay?",
+        "Answer10":"Payment is made in national currency - hryvnia. We can also accept payments to a foreign currency account from the European Union and America, providing you with an invoice.",
+        "Question11":"Do you offer a payment holiday in case of job loss, etc.?",
+        "Answer11":"Yes. Terms and conditions are considered individually with each client.",
+        "Question12":"What if I drive more than 30,000 km / year?",
+        "Answer12":"If the limit is exceeded, a surcharge of one monthly payment is taken.",
+        "Question13":"What is my risk?",
+        "Answer13":"Your risk is minimized and there are no extra fees as when buying a car for cash. All you can lose is the warranty deposit, in case of violation of subscription’s terms and conditions.",
+        "Question14":"Can I make the first payment more, for example, 50% of the cost of the car to reduce the monthly payment?",
+        "Answer14":"You can, but what for? :)",
+        "Question15":"Is it possible to pay the car out earlier, for example, in 2 years?",
+        "Answer15":"It is possible, but we sell service, not cars. If you do not see value in it, it is better to take a loan instead.",
+        "Question16":"Can I change the car for another one in a year?",
+        "Answer16":"Easy! You return the current car and we provide you with a new one of your choice. Meanwhile, if you help us find a client whilst returning your car, the entire warranty deposit will be transferred to your new car without any losses. If we look for a new client by ourselves, we will charge you one monthly subscription payment.",
+        "Question17":"What cars are available?",
+        "Answer17":"We have access to any cars available in Ukrainian car dealerships. The models presented on the site are the TOP, which is the most commonly chosen by our customers in terms of price / quality. \nThese cars – are the ones we sure you will enjoy using. If you do not find a model which interests you on the site – please fill in the application on the site or write to us in a telegram@DrivovoClub.",
+        "Question18":"Can you advise, help choose a car?",
+        "Answer18":"We can, want and recommend. We try to find out the needs, driving style, lifestyle and client’s priorities in general. \nWe want to make the whole subscription period a real pleasure and joy, so that the car excites you every day. It is of big  importance to us how you will feel behind the wheel of the chosen car.",
+        "Question19":"Can we go to the dealership together and choose a car?",
+        "Answer19":"Yes, of course! We will agree on time and meet in the salon, and if you wish, we will pick you up from your home or call a taxi for you.",
+        "Question20":"What is the subscribing process? \"Well, I chose a car, what's next? What do I need?",
+        "Answer20":"After choosing the complete set and obtaining the cost of the car, we calculate the cost of subscription.\nNext, we conduct a scoring for social capital. We do not look at the balance sheets and do not require origin of income confirmation. \nWe sign a contract and issue an invoice for you. \nDelivery of the car - from 20 minutes.",
+        "Question21":"Can I give the car to a friend, partner?",
+        "Answer21":"Yes, you can give the car to everyone who meets the requirements of our public offer. Meanwhile, the subscription is still issued to you.",
+        "Question22":"Is there a package that entitles me to joint ownership of the car? \"It's quite expensive for me and I'd like to split the cost with a friend?",
+        "Answer22":"Yes, in 2021 the Split tariff was added, which will allow you to subscribe together with a friend or relative.",
+        "Question23":"What does the insurance cover and what is the best thing about Drivovo?",
+        "Answer23":"You will have a full CASCO (0% deductible for car accidents and 5% for car theft). Covers any costs: in case of damage to the car by you or third parties. \nOn our behalf, we guarantee to start repairs on the 3rd day after insured event, without waiting for payment from the IC, immediately upon receipt of the invoice from the service station.",
+        "Question24":"Everything is so cool, that its hard to believe, what's the trick?",
+        "Answer24":"We often faced with this question. Its nature is clear, because sometimes it seems that it is a national idea to look for cunning where is none. We just made a service with love and put our soul into it, we feel our customers, we are friends and we choose the best customers on the market. We are ready to bet you $ 3,000 that you will be satisfied with the service for the entire subscription period!",
+        "Question25":"Do you have a proposal for private investments into the project?",
+        "Answer25":"Yes! We are growing and ready to involve new resources for expanding. Send a request to telegram @DrivovoClub",
+        "Question26":"Why do you offer night test drives?",
+        "Answer26":"1. Free roads without traffic jams. You will feel the car on the pavement, the road and in city mode.\n2. Opportunity to test different speed modes. \n3. It's safer due to low traffic. \n4. It is more convenient for clients to plan outside of working hours. \n5. Because no one but us conducts them in Ukraine! It's driving, fun, unusual and interesting. \nRock and roll is our everything :)",
+        "Question27":"Who pays traffic fines? Can I promptly pay them discounted to half price?",
+        "Answer27":"These worries are on us. We pay the fine within 24 hours as soon as we receive the report of the violation via email. At the end of the month, we will add a penalty payment amount to your bill. You don't need to watch timely fine payments.",
+        "Question28":"What to do if a car is stolen?",
+        "Answer28":"1. Report the theft to the police, Insurance company, Drivovo. \n2. Return the data sheet and keys. \nIf you left your car registration in a stolen car, the insurance company will not accept the claim and all financial responsibility will fall on you.",
+        "Question29":"What to do if you was involved in an accident?",
+        "Answer29":"Every Drivovo car has a checklist for dealing with emergencies, listing assistants` direct numbers. \n1. Make sure your life and wellbeing are not in danger \n2. Call the police and make an accident report \n3. Call the assistant and record the insured event. If necessary, we will send a tow truck to you (free of charge) \n4. The next day hand over the keys to us and we will carry out repairs.",
+        "Question30":"Can I go abroad by car?",
+        "Answer30":"Sure. You need to inform us 4 days before departure and we will bring you all the necessary permits/paperwork.",
+        "Question31":"Can I go to the Crimea, Donetsk, Luhansk region?",
+        "Answer31":"Unfortunately, no, because the IC does not cover the possible risks in these areas.",
+        "Question32":"Where should I take my car for MOT?",
+        "Answer32":"All maintenance is carried out only at certified stations. You do not need to think about it, because our driver will pick up the car in convenient for you place and bring it back after. We value your time!",
+        "Question33":"Where can I get tyres?",
+        "Answer33":"We take care of the purchase, replacement and storage of rubber. You only let us know the date and time when you want to do it. Next is our service engineer reserves a time slot for you at the service station. The cost of replacement and storage is included in the subscription.",
+        "Question34":"Is it possible to complete the car with some accessories?",
+        "Answer34":"Yes, we can add the cost of selected accessories to your monthly subscription fee, or you can pay for them right away.",
+        "Question35":"Can I unsubscribe from a previously agreed deadline?",
+        "Answer35":"Yes. In this case, you lose the deposit or you can bring a client instead of yourself and receive a refund of the warranty deposit.",
+        "Question36":"You do not have a car on the site that I want. Can I only choose from what is available?",
+        "Answer36":"We have access to any cars available in Ukrainian car dealerships. The models presented on the site are the TOP that is most commonly chosen by our customers in terms of price / quality. These are the cars we are sure you will enjoy. If you can`t find the right model on the site, you can apply on the site or write to us on telegram @DrivovoClub.",
+        "Question37":"Is it possible to order a car with my specification? The showroom doesn't have what I want.",
+        "Answer37":"Yes. Estimated delivery time 3-4 months.",
+        "Question38":"Do You Have Trade In service? I do not want to sell my car myself.",
+        "Answer38":"Yes, we have partners who are ready to buy cars from our customers. The procedure is quick and easy, you do not need to communicate with \"buyouts\", we will take care of everything.",
+        "Question39":"Is it possible to buy a car for the full price through you? How will I  benefit?",
+        "Answer39":"Yes, if you do not find our service useful, we will offer a purchase at full cost. Your benefit will be in our bonuses. When you buy a car through our company, you will receive a set of winter tires and paid maintenance for the first year of operation of the car.",
+        "Question40":"Do you have a used car?",
+        "Answer40":"No. It is possible that we will launch this direction in 2022.",
+        "Question41":"Who will be registered as a car owner?",
+        "Answer41":"Until the end of the subscription, the car will be registered to a legal entity. After finishing subscription it can be registered with a  different owner.",
+        "Question42":"Can I pay for a subscription from a private individual or a limited liability company?",
+        "Answer42":"Yes. You can pay from both individuals and legal entities. If your LLC is a VAT payer, you will be able to apply for VAT refunds, thereby reducing your expenses.",
+        "Question43":"Як швидко я можу забрати автомобіль?",
+        "Answer43":"Від 20 хвилин. Якщо обране вами авто є у наявності.",
+        "Question44":"We are a food company; do you have a b2b offer? We would like to use your service as one of the tools to motivate and encourage employees.",
+        "Answer44":"Yes. We will offer you 3-5 different options that will cover all your needs.",
+        "Question45":"Can I use a car in a taxi?",
+        "Answer45":"No, subscription cars are for personal use only, not commercial use.",
+        "Question46":"Do you have a referral / affiliate program?",
+        "Answer46":"Yes, but it is not yet fully automated. We can schedule a call with you and discuss the details. Write to us in a telegram @DrivovoClub.",
+        "Question47":"Can I become your representative in another city?",
+        "Answer47":"We have a lot of inquiries from different cities of Ukraine. Please contact us in a telegram @DrivovoClub."
+    },
+    "Reviews": {
+        "Text1": "Focus on what is important for yourself and enjoy life \"- the approach and philosophy are very impressed. The most interesting configurations, flexibility of conditions, not just customer focus, but the development of relationships, the format of a club by interests is a driver's dream)",
+        "Name1": "Mariya Ivanova",
+        "Position1": "",
+        "Text2": "The first client-oriented service in Ukraine in my practice. Everything is fast, easy and stress free. For those who are willing to pay a little more for comfort.",
+        "Name2": "Volodymyr Kalinichenko",
+        "Position2": "",
+        "Text3": "About three years ago, a colleague told me that there is a car subscription service in the world, I thought back then that this was the ideal option: something in between a loan and a rental. And now, it turns out, it appeared in Ukraine) The company is young, but I see an advantage in this: they can afford a very cool client approach. I saw that they just have a Peugeot 2008, which I practically decided on, left an application, they sent me a calculation, signed up for a test drive, for which a special thank you: I was given the opportunity to make 100% sure that the car suits me, they gave me a ride on a similar one. other manufacturer for comparison. Now I even think that if I was after her in a dealership showroom, I might not have bought it: you have to pay a decent amount, get a loan (or part with even larger amount), for this you need to be absolutely sure that the car is \"mine\", otherwise the risks are very high, not to mention the queue of six months or more for production (and at the Peugeot warehouses now only those configurations that no one takes). Here, I know that worst case scenario, I will lose the deposit in 2 months of the subscription (and that is, there are  options to avoid that), but if life circumstances suddenly turn out to be such that I need a car of a different class / size, this is possible hassle free as well as the sale and a purchase of new one. An additional bonus of the service is in the development of financial literacy) when calculating, they show the cost of ownership, the cost of money spent now instead of investing. The car was delivered at the time and place I suggested, washed, refuelled and with a bunch of gifts, which is especially nice. Thanks to Maxim and Oksana, I wish you the rapid development of the service!",
+        "Name3": "Dmitry Bryukhatsky",
+        "Position3": "",
+        "Text4": "I have been interested in the new Tiguan for a long time, so I wanted to see for myself that it is as clever as is described in numerous reviews. We agreed with Drivovo on a test drive of Tiga, but it turned out that \"at the same time\" I had the opportunity to test a hybrid Ravchik (also checked him out once before, but without enthusiasm). The first was Ravchik, and he was much more dynamic than Ive I thought) say, not as nimble as I would like, but really exceeded my expectations. And then there was Tig, and behind the wheel he naturally tore off my roof 😂 wheelbarrow - razor, I was delighted with the dynamics. We even made a few visits to “polish” my positive impressions) I didn't want to leave him at all. I want to sincerely thank Drivovo for such a wonderful opportunity, as well as warmth and openness in discussing the details.",
+        "Name4": "Romeo Vigilante",
+        "Position4": "",
+        "Text5": "That's the first month of my use of the service. I still don't understand what amazes me more - the service or  it’s team. The former and the latter are unrealistically cool. I can't be satisfied enough. Among the advantages for me personally: - no unclear payments. - transparency of processes. Max, I'll be there soon for Volvo 😉). Many thanks to Maxim for breaking the stereotypes about the car of a certain brand and all the Drivovo dream team for what you do.",
+        "Name5": "Oleksandr Kozlovskyi",
+        "Position5": "",
+        "Text6": "Why Drivovo? Because it is convenient! I was already looking out for a new car when I saw a Drivovo ad on FB. Honestly, the program did not inspire confidence at first. \"Not in this country\" - I thought. But I decided to give the situation a chance and made a request. Soon Max Soloviev called me back, and we talked for more than an hour. He explained in detail how it works and shared his plans for the future. At this stage, trust appeared not in the program, but in Max, as a CEO - I would love to work with him. Therefore, I went further, and we decided on a complete set. Max calculated the cost and listed everything in detail. Of course, I double checked everything and made sure that the prices were \"real\" and I wouldn’t have to pay for air in pretty packaging. As next stage, I  had to sell my car to make the first subscription payment. And then I realized what a \"personal approach\" is. Max took my Mazda and went to the dealership for an appraisal himself, leaving his Audi as a pledge. This greatly strengthened my confidence in him, and saved me a lot of time and energy. To sign the contract, Max came to my house with his son and gave him a packet of $$$ to count. After that, I no longer doubted that I was doing everything wright. My special set arrived pretty quickly. A week before the deadline, Max said that the car was already ready, and with numberplates. It was a pleasant surprise for me. Test drives from Drivovo are a separate fascinating story that requires its own post. I follow the Instagram project with pleasure. Speaking about the program itself, I was drawn by a full \"umbrella\" - everything is included in the subscription payments: insurance, MOT with a driver, replacement car. It is important for me to use a car and enjoy it, and not bother with its content, wait in queues at the service and fiddle with insurance. All this is covered by Drivovo. I recommend!",
+        "Name6": "Vitaly Kovalenko",
+        "Position6": "",
+        "Text7": "Visited yesterday's Volvo xc60 night test drive. But it's not about the car. Thanks to Max for an interesting conversation. We drove on empty roads, talked about cars, business model, approach to money and things. #Drivovo is an interesting service. Definitely worth looking into for those who do not want to withdraw the entire amount from circulation, are considering a loan, or just want to drive a new car without problems",
+        "Name7": "Maksym Roienko",
+        "Position7": "",
+        "Text8": "How can I characterize Max and Drivovo: - Professional; - Fast; - High quality; - And most importantly, customer focused at the Zappos level (if you know what I mean); Max and his team not only organized a car with zero cost in time and nerves for me, but and added a lot of nice gestures, a la brought the car to the office, winter car mats, branded umbrella, organized armoring of the case from scratches, washer and so on. I am sure that Drivovo is the future of the Ukrainian car market and if you are a lazy perfectionist like me and are not ready to delve into a topic that is unnecessary for you, plus you have everything by subscription like mine, then work with Drivovo! Hi Max and the team, thank you for quality product.",
+        "Name8": "Michael Maximoff",
+        "Position8": "Founder (Folderly) и Co-Founder & Managing Partner (Belkins)",
+        "More": "See more"
+    },
+    "CarCard": {
+        "From": "From $",
+        "PerMonth": "per month",
+        "Acceleration": "Acceleration",
+        "Seconds": "sec.",
+        "Consumption": "Fuel consumption",
+        "L100km": "l/100 km",
+        "Power": "Power",
+        "HP": "hp",
+        "MaxSpeed": "Max. speed",
+        "KmperHour": "km/hour"
+    },
+    "Banner": {
+        "Text": "- we create the service you have dreamed about"
+    },
+    "InvalidEmail": "Invalid input format",
+    "InvalidPhone": "Invalid input format",
+    "Required": "Required",
+    "Min3": "Must be at least 3 characters long",
+    "Max50": "Must be no more than 50 characters"
+}

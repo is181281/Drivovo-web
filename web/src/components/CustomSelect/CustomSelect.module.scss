@@ -1,0 +1,213 @@
+@import "../../assets/scss/abstracts.scss";
+
+.selectWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative; 
+    border-radius: 15px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.09);
+    background-color: #fff;
+    z-index: 3;
+
+    &__openedUp {
+        border-top-left-radius: 0;
+    }
+
+    &__openedDown {
+        border-bottom-left-radius: 0;
+    }
+}
+
+.selectContainer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 5;
+  }
+
+.magnifierImage {
+    width: 22px;
+    height: 22px;
+    margin-left: 32px;
+}
+
+.select {
+    display: flex;
+    align-items: center;
+    width: 290px;
+    height: 100%;
+    line-height: 20px;
+    background-image: url(../../assets/icons/select-arrow.png); 
+    background-repeat: no-repeat;
+    background-position-x: calc(100% - 17px);
+    background-position-y: 50%;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    white-space: normal;
+    cursor: pointer;
+    margin-left: 23px;
+    z-index:3;
+}
+
+.selectText {
+    display: flex;
+    align-items: center;
+    height: fit-content;
+    height: -moz-fit-content;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: $color-grey;
+
+    &__black {
+        color: $color-black;  
+    }
+}
+
+.select:focus{
+    outline: none;
+}
+
+.selectOptionContainer {
+    width: 400px;
+    overflow-y: auto;
+    padding: 0;
+    background: #fff;
+    height: 350px;
+    position: absolute;
+    left: 0px;
+    top: 83px;
+    z-index: 12;
+
+    &__down {
+        top: 83px;
+        border-bottom-left-radius: 15px;
+        border-bottom-right-radius: 15px;
+        box-shadow: 0px 11px 20px rgba(0, 0, 0, 0.09);
+    }
+
+    &__up {
+        top: -350px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        box-shadow: 0px -11px 20px rgba(0, 0, 0, 0.09);
+    }
+
+    &::-webkit-scrollbar {
+        width: 3px;
+    }
+
+    &::-webkit-scrollbar-track {
+        width: 3px;
+        background:$color-light-grey;
+        opacity: 0.39;
+        border-radius: 9px;
+        margin: 30px 0 37px 0;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        width: 5px;
+        height: 35px;
+        background: $color-grey;
+        border-radius: 9px;
+    }
+}
+
+.selectOption {
+    width: 100%;
+    padding: 18px 77px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: #000000;
+    word-wrap:break-word;
+    white-space: normal;
+    cursor: pointer;  
+    list-style-type: none;
+}
+
+.selectOption:hover {
+    color:#fff;
+    background-color: dodgerblue;
+  
+}
+
+.selectButton {
+    @include button-main;
+    width: 200px;
+    height: 80px;
+    margin-left: 32px;
+}
+
+
+@media (max-width: 767px) {
+
+    .selectWrapper {
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0;
+        z-index: 31; 
+    
+        &__opened {
+            border-bottom-left-radius: 0;
+        }
+    }
+
+    .magnifierImage {
+        width: 16px;
+        height: 16px;
+        margin-left: 22px;
+    }
+
+    .select {
+        width: calc(100% - 61px);
+        
+    }
+
+    .selectOptionContainer {
+        width: 100%;
+        max-height: 250px;
+        z-index: 5;  
+        
+        &__down {
+            top: 49px;
+        }
+    
+        &__up {
+            top: -260px;
+        }
+        
+    }
+
+    .selectOption {
+        padding: 9px 77px;
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+
+
+    .selectButton {
+        position: absolute;
+        top: 88px;
+        left: calc(50% - 150px);
+        width: 280px;
+        height: 60px;
+        margin-left: 0;
+    }
+
+}

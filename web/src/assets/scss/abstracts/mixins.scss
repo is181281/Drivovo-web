@@ -1,0 +1,58 @@
+@import "./constants.scss";
+
+.hidden {
+    visibility: hidden;
+  }
+
+  @mixin button-main {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-orange;
+    border-radius: 15px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    letter-spacing: 0.02em;
+    color: $color-white;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: $color-orange-hover;
+    }
+
+    &:active {
+      background-color: $color-orange;
+    }
+  }
+
+  @mixin pagination-button {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+
+    &__prev {
+      left: -58px;
+      background: url(../../../assets/icons/prev-arrow.png) center no-repeat;
+    }
+    &__prev:hover {
+        background: url(../../../assets/icons/prev-arrow-hover.png) center no-repeat;
+    }
+
+    &__next {
+        right: -58px;
+        background: url(../../../assets/icons/next-arrow.png) center no-repeat;
+    }
+    &__next:hover {
+        background: url(../../../assets/icons/next-arrow-hover.png) center no-repeat;
+    }
+    
+  }

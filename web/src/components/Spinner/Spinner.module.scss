@@ -1,0 +1,111 @@
+.wrapper {
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.1);
+  }
+  
+  .container {
+    display: inline-block;
+    width: 87px;
+    height: 87px;
+    overflow: hidden;
+    background: none;
+  }
+  
+  .element {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateZ(0) scale(0.87);
+    transform-origin: 0 0;
+    backface-visibility: hidden;
+  }
+  
+  
+    .element div {
+      position: absolute;
+      top: 24px;
+      left: 47px;
+      box-sizing: content-box;
+      width: 6px;
+      height: 12px;
+      background: #fe718d;
+      border-radius: 3px / 6px;
+      transform-origin: 3px 26px;
+      animation: element-animation linear 1s infinite;
+      
+    }
+    .element div:nth-child(1) {
+      background: #fe718d;
+      transform: rotate(0deg);
+      animation-delay: -0.9166666666666666s;
+    }
+    .element div:nth-child(2) {
+      background: #f47e60;
+      transform: rotate(30deg);
+      animation-delay: -0.8333333333333334s;
+    }
+    .element div:nth-child(3) {
+      background: #f8b26a;
+      transform: rotate(60deg);
+      animation-delay: -0.75s;
+    }
+    .element div:nth-child(4) {
+      background: #abbd81;
+      transform: rotate(90deg);
+      animation-delay: -0.6666666666666666s;
+    }
+    .element div:nth-child(5) {
+      background: #849b87;
+      transform: rotate(120deg);
+      animation-delay: -0.5833333333333334s;
+    }
+    .element div:nth-child(6) {
+      background: #6492ac;
+      transform: rotate(150deg);
+      animation-delay: -0.5s;
+    }
+    .element div:nth-child(7) {
+      background: #637cb5;
+      transform: rotate(180deg);
+      animation-delay: -0.4166666666666667s;
+    }
+    .element div:nth-child(8) {
+      background: #6a63b6;
+      transform: rotate(210deg);
+      animation-delay: -0.3333333333333333s;
+    }
+    .element div:nth-child(9) {
+      background: #fe718d;
+      transform: rotate(240deg);
+      animation-delay: -0.25s;
+    }
+    .element div:nth-child(10) {
+      background: #f47e60;
+      transform: rotate(270deg);
+      animation-delay: -0.16666666666666666s;
+    }
+    .element div:nth-child(11) {
+      background: #f8b26a;
+      transform: rotate(300deg);
+      animation-delay: -0.08333333333333333s;
+    }
+    .element div:nth-child(12) {
+      background: #abbd81;
+      transform: rotate(330deg);
+      animation-delay: 0s;
+    }
+  
+    @keyframes element-animation {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+      }
+    }

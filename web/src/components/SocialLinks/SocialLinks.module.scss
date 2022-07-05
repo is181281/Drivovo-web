@@ -1,0 +1,79 @@
+@import "../../assets/scss/abstracts.scss";
+
+.mainWrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 144px;
+    height: 24px;
+}
+
+.socialLink {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: background-image 0.3s ease-out;
+
+    &__facebook__dark {
+        background-image: url(../../assets/icons/footer-facebook.png); 
+    }
+
+    &__facebook__dark:hover {
+        background-image: url(../../assets/icons/footer-facebook-hover.png); 
+    }
+
+    &__facebook__light {
+        background-image: url(../../assets/icons/header-facebook.png); 
+    }
+
+    &__facebook__light:hover {
+        background-image: url(../../assets/icons/header-facebook-hover.png); 
+    }
+
+    &__instagram__dark {
+        background-image: url(../../assets/icons/footer-instagram.png); 
+    }
+
+    &__instagram__dark:hover {
+        background-image: url(../../assets/icons/footer-instagram-hover.png); 
+    }
+
+    &__instagram__light {
+        background-image: url(../../assets/icons/header-instagram.png); 
+    }
+
+    &__instagram__light:hover {
+        background-image: url(../../assets/icons/header-instagram-hover.png); 
+    }
+
+    &__telegram__dark {
+        background-image: url(../../assets/icons/footer-telegram.png); 
+    }
+
+    &__telegram__dark:hover {
+        background-image: url(../../assets/icons/footer-telegram-hover.png);
+    }
+
+    &__telegram__light {
+        background-image: url(../../assets/icons/header-telegram.png); 
+    }
+
+    &__telegram__light:hover {
+        background-image: url(../../assets/icons/header-telegram-hover.png); 
+    }
+
+    &__linkedin__dark {
+        background-image: url(../../assets/icons/footer-linkedin.png); 
+    }
+
+    &__linkedin__dark:hover {
+        background-image: url(../../assets/icons/footer-linkedin-hover.png);
+    }
+
+    &__linkedin__light {
+        background-image: url(../../assets/icons/header-linkedin.png); 
+    }
+
+    &__linkedin__light:hover {
+        background-image: url(../../assets/icons/header-linkedin-hover.png); 
+    }
+}

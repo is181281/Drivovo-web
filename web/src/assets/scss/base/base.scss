@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+  position: relative;
+  // max-width: 100vw;
+  // overflow: hidden;
+}
+
+body::after{
+  position:absolute; width:0; height:0; overflow:hidden; z-index:-1; // hide images
+  content:url(../../../assets/images/promo-car-tiguan-hover.png) url(../../../assets/images/orange-audi-hover.png)
+  url(../../../assets/images/audi-hover.png) url(../../../assets/images/volkswagen-hover.png) url(../../../assets/images/volvo-hover.png)
+  url(../../../assets/images/toyota-hover.png) url(../../../assets/images/peugeot-hover.png);   // load images
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  max-width: 100%;
+  min-height: 100vh;
+}
