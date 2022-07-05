@@ -1,0 +1,16 @@
+.wrapper {
+  background-color: #4680ff;
+  color: #fff;
+  position: relative;
+  padding: 0 1rem 0 1rem;
+  display: block;
+  clear: both;
+  float: unset;
+  right: 0;
+  top: 0;
+  margin-left: 230px;
+  margin-top: 50px;
+  height: calc(100vh - 70px);
+  width:calc(100vw - 270px);
+  transition: all 0.3s ease-in-out;
+}

@@ -1,0 +1,128 @@
+@import "../../assets/scss/abstracts.scss";
+
+.mainWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 1000px;
+  max-width: 192rem;
+  background: url(../../assets/images/grey-dots.png) top 87px left -250px no-repeat,
+              url(../../assets/images/grey-dots.png) bottom 300px right -34px no-repeat $color-white;
+  z-index: 2;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1300px;
+}
+
+.headerContainer {
+  display: flex;
+  width: 100%;
+  max-width: 130rem;
+  margin-top: 8rem;
+  font-size: 50px;
+  font-style: normal;
+  line-height: 55px;
+  letter-spacing: 0.02em;
+  color: $color-black;
+}
+
+.headerText {
+  font-family: Gilroy;
+  font-weight: normal;
+
+}
+
+.headerTextStrong {
+  font-family: Gilroy Bold;
+  font-weight: 400;
+  margin-left: 14px;
+}
+
+.textContainer {
+  width: 100%;
+  max-width: 130rem;
+  margin-top: 1rem;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.02em;
+  color: #000000;
+}
+
+.questionContainer {
+  max-width: 130rem;
+  width: 100%;
+  margin-top: 45px;
+}
+
+.button {
+  @include button-main;
+  width: 374px;
+  height: 80px;
+  margin: 53px 0 80px 0;
+}
+
+@media (min-width: 768px) and (max-width: 1360px) {
+  .mainContainer {
+    max-width: 728px;
+  }
+
+  .headerContainer {
+    max-width: 72.8rem;
+    margin-top: 6rem;
+    font-size: 40px;
+    line-height: 44px;
+  }
+
+  .textContainer {
+    max-width: 72.8rem;
+    font-size: 18px;
+    line-height: 22px;
+  }
+}
+
+@media (max-width: 767px) {
+  .mainWrapper {
+  background: url(../../assets/images/grey-dots-320.png) top 147px left 0px no-repeat,
+              url(../../assets/images/grey-dots-320.png) top 547px right 0px no-repeat,
+              url(../../assets/images/grey-dots-320.png) bottom 500px left 0px no-repeat $color-white;
+  }
+
+  .mainContainer {
+    max-width: 280px;
+  }
+
+  .headerContainer {
+    margin-top: 4rem;
+    font-size: 30px;
+    line-height: 33px;
+  }
+
+  .textContainer {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .questionContainer {
+    max-width: 28rem;
+    margin-top: 40px;
+  }
+
+  .button {
+    width: 200px;
+    height: 60px;
+    margin: 20px 0 40px 0;
+  }
+}

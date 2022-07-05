@@ -1,0 +1,159 @@
+@import "../../assets/scss/abstracts.scss";
+
+.mainWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    height: auto;
+    max-width: 1920px;
+    background: url(../../assets/images/grey-dots.png) top 80px left -250px no-repeat,
+                url(../../assets/images/grey-dots.png) bottom 583px left -30px no-repeat $color-white;
+}
+
+.background {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 964px;
+    background: #F4F4F4;
+}
+
+.mainContainer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1300px;
+    z-index: 2;
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: start;
+    width: 1300px;
+    height: 55px;
+    margin-top: 80px;
+    font-size: 50px;
+    font-style: normal;
+    line-height: 55px;
+    letter-spacing: 0.02em;
+    color: $color-black;
+}
+
+.headerText {
+    font-family: Gilroy;
+    font-weight: normal;
+}
+
+.headerTextStrong {
+    font-family: Gilroy Bold;
+    font-weight: 400;
+    margin-left: 14px;
+}
+
+.textContainer {
+    width: 1300px;
+    height: 24px;
+    margin-top: 10px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    display: flex;
+    justify-content: start;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+
+.cardsContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    width: 100%;
+    max-width: 1320px;
+    margin: 42px 0 34px 0;
+}
+
+.button {
+  @include button-main;
+  width: 374px;
+  height: 80px;
+  margin: 53px 0 80px 0;
+}
+
+@media (min-width: 768px) and (max-width: 1500px) {
+    .mainContainer {
+        max-width: 740px;
+    }
+
+    .headerContainer {
+        width: 740px;
+        height: 44px;
+        margin-top: 60p;
+        font-size: 40px;
+        line-height: 44px;
+    }
+
+    .textContainer {
+        width: 740px;
+        height: 22px;
+        margin-top: 10px;
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .cardsContainer {
+        max-width: 740px;
+        margin: 35px 0 56px 0;
+    }
+
+}
+
+@media (max-width: 767px) {
+
+    .mainWrapper {
+        background: url(../../assets/images/grey-dots.png) top 80px right -350px no-repeat,
+                    url(../../assets/images/grey-dots.png) bottom 613px left -330px no-repeat $color-white;
+    }
+
+    .mainContainer {
+        max-width: 280px;
+    }
+
+    .headerContainer {
+        width: 280px;
+        height: 33px;
+        margin-top: 40px;
+        font-size: 30px;
+        line-height: 33px;
+    }
+
+
+    .textContainer {
+        width: 280px;
+        height: 19px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+
+    .cardsContainer {
+        justify-content: center;
+        max-width: 280px;
+        margin: 27px 0 34px 0;
+    }
+
+    .button {
+      width: 280px;
+      height: 60px;
+      margin: 18px 0 40px 0;
+  }
+
+}

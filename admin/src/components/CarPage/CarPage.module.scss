@@ -1,0 +1,514 @@
+@import "../../assets/scss/abstracts.scss";
+
+.mainWrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    max-width: 192rem;
+    background: url(../../assets/images/grey-dots.png) top 180px left -260px no-repeat,
+                url(../../assets/images/grey-dots.png) bottom 463px right -36px no-repeat $color-white;
+    z-index: 2;
+}
+
+.input__error{
+  border: 2px solid $color-error !important;
+  border-radius: 10px;
+}
+
+.headerTextContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.headerContainer {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    max-width: 1300px;
+    font-style: normal;
+    letter-spacing: 0.02em;
+    color: $color-black;
+    margin: 32px 0;
+
+    &__first {
+        height: 170px;
+        justify-content: space-between;
+    }
+
+    &__second {
+        height: 81px;
+        justify-content: center;
+    }
+}
+
+.headerText {
+    font-family: Gilroy;
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: normal;
+
+    &__brand {
+      margin-top: 16px;
+    }
+}
+
+.headerTextStrong {
+    font-family: Gilroy Bold;
+    font-size: 50px;
+    line-height: 62px;
+    font-weight: 900;
+    width: 100%;
+    height: 62px;
+    margin-left: 0px;
+    border: none;
+    outline: none;
+
+    &__brand {
+      line-height: 41px;
+      font-size: 37px;
+    }
+}
+
+.navigationLink {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    width: 216px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    letter-spacing: 0.02em;
+    color: $color-black;
+    text-decoration: none;
+    cursor: ponter;
+    margin-bottom: 18px;
+
+    &:hover {
+        color: $color-orange;
+    }
+
+    &:hover &__arrow{
+        background: url(../../assets/icons/link-arrow-orange.png) no-repeat;
+    }
+
+    &__arrow{
+        display: flex;
+        height: 10px;
+        width: 30px;
+        background: url(../../assets/icons/link-arrow-black.png) no-repeat;
+        margin-right: 21px;
+    }
+}
+
+.mainContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    max-width: 130rem;
+    height: 477px;
+}
+
+.sliderWrapper {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 742px;
+    height: 477px;
+
+    &__image {
+      position: absolute;
+      right: -100px;
+      width: 817px;
+      height: 477px;
+      cursor: pointer;
+    }
+}
+
+.uploadInput {
+  display: none;
+}
+
+.sideContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    padding: 56px 109px 0 168px;
+    right: 0;
+    top: 0;
+    width: 558px;
+    height: 477px;
+    background: #F4F4F4;
+    border-radius: 10px;
+
+    &__header {
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 36px;
+        letter-spacing: 0.02em;
+        color: #000000;
+        margin-bottom: 35px;
+
+    }
+
+    &__parameter {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 281px;
+        height: 51px;
+        margin-bottom: 15px;
+
+    }
+
+    &__parameter__name {
+        margin-top: 10px;
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.02em;
+        color: $color-grey;
+    }
+
+    &__parameter__container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    &__parameter__value {
+        font-family: Gilroy Bold;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 35px;
+        width: 90px;
+        height: 42px;
+        text-align: right;
+        letter-spacing: 0.02em;
+        color: $color-black;
+        border: none;
+        outline: none;
+        background: transparent;
+    }
+
+    &__parameter__dimension {
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 16px;
+        text-align: right;
+        letter-spacing: 0.02em;
+        color: $color-black;
+    }
+}
+
+.economicsContainer {
+    width: 100%;
+    max-width: 130rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.parameter {
+    &__container {
+        display: flex;
+        align-items: flex-end;
+        width: 610px;
+        height: 36px;
+        margin-bottom: 15px;
+    }
+
+    &__name {
+        display: flex;
+        align-items: flex-end;
+        height: 36px;
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 19px;
+        letter-spacing: 0.02em;
+        color: $color-black;
+        border-bottom:  1px solid $color-white;
+    }
+
+    &__gap {
+        flex-grow: 2;
+        min-width: 10px;
+        height: 30px;
+        border-bottom:  1px dashed $color-light-grey;;
+        margin: 0 10px 6px 13px;
+    }
+
+    &__value {
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 36px;
+        height:  36px;
+        text-align: right;
+        letter-spacing: 0.02em;
+        color: $color-black;
+        border: none;
+        outline: none;
+        background: transparent;
+
+
+        &__month {
+          width: 36px;
+        }
+
+        &__price {
+          width: 95px;
+        }
+    }
+}
+
+.button {
+    @include button-main;
+    width: 374px;
+    height: 80px;
+    margin: 53px 0 80px 0;
+
+    &__delete {
+      background-color: $color-error !important;
+    }
+
+    &__delete:hover {
+      background-color: $color-error !important;
+    }
+
+    &__delete:active {
+      background-color: $color-error !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1360px) {
+    .headerContainer {
+        max-width: 72.8rem;
+        height: auto;
+        margin: 40px 0 18px 0;
+    }
+
+    .headerTextStrong {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .headerTextContainer {
+        max-width: 51.2rem;
+    }
+
+    .mainContainer {
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: center;
+        max-width: 67.2rem;
+        height: 565px;
+    }
+
+    .sliderWrapper {
+        width: 672px;
+        height: 100px;
+        justify-content: center;
+        align-items: center;
+
+        &__image {
+          right: 16px;
+          bottom: -145px;
+          width: 640px;
+          height: 373px;
+        }
+    }
+
+    .sideContainer {
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 175px 36px 33px 36px;
+        width: 100%;
+        height: 337px;
+
+        &__header {
+            font-size: 28px;
+            line-height: 34px;
+            margin-bottom: 12px;
+            width: calc(100% - 72px);
+
+        }
+
+        &__parameter {
+            width: 292px;
+            height: 35px;
+            margin-bottom: 6px;
+
+        }
+
+        &__parameter__name {
+            margin-top: 16px;
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        &__parameter__container {
+            flex-direction: row;
+            width: 126px;
+        }
+
+        &__parameter__value {
+            font-size: 28px;
+            width: 60px;
+        }
+
+        &__parameter__dimension {
+            font-size: 14px;
+            line-height: 17px;
+            margin-bottom: 4px;
+            margin-left: 5px;
+        }
+    }
+
+}
+
+
+@media (max-width: 767px) {
+    .headerContainer {
+        max-width: 28rem;
+        height: auto;
+        margin: 40px 0 18px 0;
+    }
+
+    .headerText {
+        font-size: 14px;
+        line-height: 17px;
+    }
+
+    .headerTextStrong {
+        font-size: 30px;
+        line-height: 37px;
+    }
+
+    .navigationLink {
+        display: none;
+    }
+
+    .mainContainer {
+        flex-direction: column;
+        align-items: center;
+        max-width: 32rem;
+        height: 477px;
+    }
+
+    .sliderWrapper {
+        width: 280px;
+        height: 100px;
+
+        &__image {
+          right: 0;
+          bottom: -67px;
+          width: 280px;
+          height: 164px;
+        }
+    }
+
+    .sideContainer {
+        padding: 83px 20px 0 10px;
+        width: 100%;
+        height: 302px;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+
+        &__header {
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 12px;
+
+        }
+
+        &__parameter {
+            width: 292px;
+            height: 35px;
+            margin-bottom: 6px;
+
+        }
+
+        &__parameter__name {
+            margin-top: 16px;
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        &__parameter__container {
+            flex-direction: row;
+            width: 126px;
+        }
+
+        &__parameter__value {
+            font-size: 28px;
+            width: 60px;
+        }
+
+        &__parameter__dimension {
+            font-size: 14px;
+            line-height: 17px;
+            margin-bottom: 4px;
+            margin-left: 5px;
+        }
+    }
+
+    .economicsContainer {
+        max-width: 28rem;
+    }
+
+    .parameter {
+        &__container {
+            width: 280px;
+            height: 22px;
+            margin-bottom: 17px;
+        }
+
+        &__name {
+            height: 22px;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 0;
+        }
+
+        &__gap {
+            flex-grow: 2;
+            min-width: 10px;
+            height: 30px;
+            border-bottom:  1px dashed $color-light-grey;;
+            margin: 0 10px 6px 13px;
+        }
+
+        &__value {
+            font-size: 18px;
+            line-height: 22px;
+            letter-spacing: 0;
+        }
+    }
+
+
+    .button {
+        width: 280px;
+        height: 60px;
+        margin: 18px 0 40px 0;
+    }
+}
