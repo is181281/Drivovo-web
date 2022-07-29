@@ -62,6 +62,10 @@ function Header(): JSX.Element {
           <SocialLinks theme="light" />
         </div>
         <div className={style.languageSelectContainer}>
+        <Link
+          to="/"
+          
+        >
           <div
             className={`${style.languageSelect} ${
               i18next.language === Language.ua
@@ -72,6 +76,11 @@ function Header(): JSX.Element {
           >
             УКР
           </div>
+          </Link>
+          <Link
+          to="/en"
+          
+        >
           <div
             className={`${style.languageSelect} ${
               i18next.language === Language.en
@@ -80,8 +89,13 @@ function Header(): JSX.Element {
             }`}
             onClick={() => i18next.changeLanguage(Language.en)}
           >
-            EN
+         
+           EN
+      
+           
+            
           </div>
+          </Link>
         </div>
         <div className={style.burgerMenu__container}>
           <img

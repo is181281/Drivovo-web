@@ -109,6 +109,7 @@ function App(): JSX.Element {
         <MailingPopupContainer />
         <Routes>
           <Route path="/" element={<MainPage />} />
+          <Route path="/en" element={<MainPage />} />
           <Route path="/b2b" element={<ForBusinessPage />} />
           <Route path="/faq" element={<FAQPage />} />
           <Route path="/cars" element={<CarsPage />} />
