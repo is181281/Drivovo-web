@@ -19,7 +19,9 @@ function Header(): JSX.Element {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
-
+if(location.pathname.indexOf("en")!=-1 && i18next.language != Language.en){
+  i18next.changeLanguage(Language.en)
+}
   return (
     <div className={style.mainWrapper} id="header">
       <SideMenu
@@ -27,12 +29,12 @@ function Header(): JSX.Element {
         closeHandler={() => setIsSudeMenuOpen(false)}
       />
       <div className={style.sideContainer}>
-        <Link to="/" className={style.logoContainer}>
+        <Link to={`${ i18next.language === Language.en?"/en":"/"}`} className={style.logoContainer}>
           <img src={headerLogo} className={style.logoImage} alt="header logo" />
         </Link>
         <div className={style.navigationLinksContainer}>
           <Link
-            to="/"
+            to={`${ i18next.language === Language.en?"/en":"/"}`}
             className={`${style.navigationLink} ${
               location.pathname === "/" ? style.navigationLink__active : ""
             }`}
@@ -40,7 +42,7 @@ function Header(): JSX.Element {
             {t("LinkNames.Main")}
           </Link>
           <Link
-            to="/b2b"
+            to={`${ i18next.language === Language.en?"/en/b2b":"/b2b"}`}
             className={`${style.navigationLink} ${
               location.pathname === "/b2b" ? style.navigationLink__active : ""
             }`}
@@ -48,7 +50,7 @@ function Header(): JSX.Element {
             {t("LinkNames.ForBusiness")}
           </Link>
           <Link
-            to="/faq"
+            to={`${ i18next.language === Language.en?"/en/faq":"/faq"}`}
             className={`${style.navigationLink} ${
               location.pathname === "/faq" ? style.navigationLink__active : ""
             }`}
@@ -72,7 +74,9 @@ function Header(): JSX.Element {
                 ? style.languageSelect__active
                 : ""
             }`}
-            onClick={() => i18next.changeLanguage(Language.ua)}
+            onClick={() => {i18next.changeLanguage(Language.ua)
+            // setIsEng(false)
+            }}
           >
             УКР
           </div>
@@ -87,7 +91,10 @@ function Header(): JSX.Element {
                 ? style.languageSelect__active
                 : ""
             }`}
-            onClick={() => i18next.changeLanguage(Language.en)}
+            onClick={() => {i18next.changeLanguage(Language.en)
+              // setIsEng(true)
+            
+            }}
           >
          
            EN
