@@ -8,17 +8,20 @@ interface Props {
 export const MediaQueryContext = createContext({
   isMobile: false,
   isPad: false,
+  isPadXs: false
 });
 
 const mediaQueries = {
   mobile: "(max-width: 767px)",
   pad: "(min-width: 768px) and (max-width: 1500px)",
+  padXs: "(min-width: 768px) and (max-width: 1200px)"
 };
 
 export default function MediaQueryProvider({ children }: Props): JSX.Element {
   const isMobile = useMedia(mediaQueries.mobile);
   const isPad = useMedia(mediaQueries.pad);
-  const value = useMemo(() => ({ isMobile, isPad }), [isMobile, isPad]);
+  const isPadXs = useMedia(mediaQueries.padXs);
+  const value = useMemo(() => ({ isMobile, isPad, isPadXs }), [isMobile, isPad, isPadXs]);
 
   return (
     <MediaQueryContext.Provider value={value}>
@@ -27,6 +30,6 @@ export default function MediaQueryProvider({ children }: Props): JSX.Element {
   );
 }
 
-export function useMediaQueryContext(): { isMobile: boolean; isPad: boolean } {
+export function useMediaQueryContext(): { isMobile: boolean; isPad: boolean, isPadXs: boolean } {
   return useContext(MediaQueryContext);
 }

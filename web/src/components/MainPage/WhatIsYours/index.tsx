@@ -14,7 +14,7 @@ import { useTypedSelector } from "../../../hooks";
 function WhatIsYours(): JSX.Element {
   const { t } = useTranslation();
   const customSlider = createRef<Slider>();
-  const { isMobile, isPad } = useMediaQueryContext();
+  const { isMobile, isPadXs } = useMediaQueryContext();
   const { carsList, carsStatus, carsError } = useTypedSelector(
     (state) => state.cars
   );
@@ -25,8 +25,8 @@ function WhatIsYours(): JSX.Element {
     dots: isMobile ? false : true,
     infinite: true,
     speed: 500,
-    slidesToShow: isMobile ? 1 : isPad ? 2 : 3,
-    slidesToScroll: isMobile ? 1 : isPad ? 2 : 3,
+    slidesToShow: isMobile ? 1 : isPadXs ? 2 : 3,
+    slidesToScroll: isMobile ? 1 : isPadXs ? 2 : 3,
     className: style.sliderContainer,
     dotsClass: style.slickDots,
     arrows: false,

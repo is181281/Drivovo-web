@@ -157,7 +157,7 @@
 }
 
 
-@media (min-width: 768px) and (max-width: 1500px) {
+@media (min-width: 768px) and (max-width: 1200px) {
     .mainWrapper {
         height: 61.5rem;
         // background: url(../../../assets/images/grey-dots-320.png) top 117px left 10px no-repeat,
@@ -197,6 +197,12 @@
             }
         }
     
+}
+
+@media (min-width: 1201px) and (max-width: 1500px) { 
+    .mainContainer {
+        max-width: 107rem;
+    }
 }
 
 @media (max-width: 767px) {
