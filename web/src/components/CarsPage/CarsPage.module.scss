@@ -81,7 +81,7 @@
     margin: 42px 0 34px 0;
 }
 
-@media (min-width: 768px) and (max-width: 1500px) {
+@media (min-width: 768px) and (max-width: 1200px) {
     .mainContainer {
         max-width: 74rem;
     }
@@ -107,6 +107,22 @@
         margin: 35px 0 56px 0;
     }
     
+}
+
+@media (min-width: 1201px) and (max-width: 1500px) {
+    .mainContainer {
+        max-width: 111rem;
+    }
+    .cardsContainer { 
+        max-width: 111rem;
+        margin-left: 20px;
+    }
+    .headerContainer { 
+        max-width: 111rem;
+    }
+    .textContainer { 
+        max-width: 111rem;
+    }
 }
 
 @media (max-width: 767px) {
