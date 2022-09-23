@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import ReactPixel from "react-facebook-pixel";
+import i18next from "../../internationalization";
 
 import config from "../../config";
 import Header from "../Header";
@@ -18,12 +19,13 @@ import AboutUsPage from "../AboutUsPage";
 import MediaQueryProvider from "../MediaQueryProvider";
 import { useAppDispatch, useTypedSelector } from "../../hooks";
 import { getCarsList } from "../../store/thunks/cars";
-import { Status } from "../../types";
+import { Language, Status } from "../../types";
 import Spinner from "../Spinner";
 import analyticsService from "../../service/analytics";
 import { getQuestionsList } from "../../store/thunks/questions";
 
 function App(): JSX.Element {
+  const location = useLocation(); 
   const { carsList, carsStatus, carsError } = useTypedSelector(
     (state) => state.cars
   );
@@ -97,6 +99,12 @@ function App(): JSX.Element {
       window.removeEventListener("blur", windowBlurHandler);
     };
   }, []);
+
+  useEffect(() => {
+    if(location.pathname.indexOf('/en') > -1 && i18next.language !==  Language.en) {
+      i18next.changeLanguage(Language.en)
+    }
+  }, [])
 
   if (carsStatus === Status.loading || questionsStatus === Status.loading) {
     return <Spinner />;
