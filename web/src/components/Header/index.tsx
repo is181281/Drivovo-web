@@ -10,6 +10,7 @@ import i18next from "../../internationalization";
 import { Language } from "../../types";
 import SideMenu from "./SideMenu";
 import SocialLinks from "../SocialLinks";
+import { addLocaleToRoute } from "../../helpers/addLocaleToRoute";
 
 function Header(): JSX.Element {
   const { t } = useTranslation();
@@ -19,9 +20,6 @@ function Header(): JSX.Element {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
-if(location.pathname.indexOf("en")!=-1 && i18next.language != Language.en){
-  i18next.changeLanguage(Language.en)
-}
   return (
     <div className={style.mainWrapper} id="header">
       <SideMenu
@@ -29,12 +27,12 @@ if(location.pathname.indexOf("en")!=-1 && i18next.language != Language.en){
         closeHandler={() => setIsSudeMenuOpen(false)}
       />
       <div className={style.sideContainer}>
-        <Link to={`${ i18next.language === Language.en?"/en":"/"}`} className={style.logoContainer}>
+        <Link to={addLocaleToRoute('/')} className={style.logoContainer}>
           <img src={headerLogo} className={style.logoImage} alt="header logo" />
         </Link>
         <div className={style.navigationLinksContainer}>
           <Link
-            to={`${ i18next.language === Language.en?"/en":"/"}`}
+            to={addLocaleToRoute('/')}
             className={`${style.navigationLink} ${
               location.pathname === "/" ? style.navigationLink__active : ""
             }`}
@@ -42,7 +40,7 @@ if(location.pathname.indexOf("en")!=-1 && i18next.language != Language.en){
             {t("LinkNames.Main")}
           </Link>
           <Link
-            to={`${ i18next.language === Language.en?"/en/b2b":"/b2b"}`}
+            to={addLocaleToRoute('/b2b')}
             className={`${style.navigationLink} ${
               location.pathname === "/b2b" ? style.navigationLink__active : ""
             }`}
@@ -50,7 +48,7 @@ if(location.pathname.indexOf("en")!=-1 && i18next.language != Language.en){
             {t("LinkNames.ForBusiness")}
           </Link>
           <Link
-            to={`${ i18next.language === Language.en?"/en/faq":"/faq"}`}
+            to={addLocaleToRoute('/faq')}
             className={`${style.navigationLink} ${
               location.pathname === "/faq" ? style.navigationLink__active : ""
             }`}

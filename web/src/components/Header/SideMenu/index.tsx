@@ -8,6 +8,7 @@ import { closeIcon } from "../../../assets/icons";
 import SocialLinks from "../../SocialLinks";
 import i18next from "../../../internationalization";
 import { Language } from "../../../types";
+import { addLocaleToRoute } from "../../../helpers/addLocaleToRoute";
 
 type Props = {
   isOpen: boolean;
@@ -56,14 +57,14 @@ function SideMenu({ isOpen, closeHandler }: Props): JSX.Element {
       </div>
       <div className={style.mainNavigationLinksContainer}>
         <Link
-          to="/"
+          to={addLocaleToRoute('/')}
           className={style.mainNavigationLink}
           onClick={closeHandler}
         >
           {t("LinkNames.Main")}
         </Link>
         <Link
-          to="/b2b"
+          to={addLocaleToRoute('/b2b')}
           className={style.mainNavigationLink}
           onClick={closeHandler}
         >
@@ -73,7 +74,7 @@ function SideMenu({ isOpen, closeHandler }: Props): JSX.Element {
           {t("LinkNames.ReferralProgram")}
         </Link> */}
         <Link
-          to="/faq"
+          to={addLocaleToRoute('/faq')}
           className={style.mainNavigationLink}
           onClick={closeHandler}
         >
@@ -82,27 +83,27 @@ function SideMenu({ isOpen, closeHandler }: Props): JSX.Element {
       </div>
       <div className={style.navigationLinksContainer}>
         <Link
-          to="/about-us"
+          to={addLocaleToRoute('/about-us')}
           className={style.navigationLink}
           onClick={closeHandler}
         >
           {t("LinkNames.AboutUs")}
         </Link>
         <Link
-          to="/cars"
+          to={addLocaleToRoute('/cars')}
           className={style.navigationLink}
           onClick={closeHandler}
         >
           {t("LinkNames.ChoseCar")}
         </Link>
-        <Link to="/b2b" className={style.navigationLink} onClick={closeHandler}>
+        <Link to={addLocaleToRoute('/b2b')} className={style.navigationLink} onClick={closeHandler}>
           {t("LinkNames.ForBusiness")}
         </Link>
         {/* <Link to="/" className={style.navigationLink} onClick={closeHandler}>
           {t("LinkNames.ReferralProgram")}
         </Link> */}
         <Link
-          to="/conditions"
+          to={addLocaleToRoute('/conditions')}
           className={style.navigationLink}
           onClick={closeHandler}
         >

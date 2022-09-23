@@ -111,11 +111,17 @@ function App(): JSX.Element {
           <Route path="/" element={<MainPage />} />
           <Route path="/en" element={<MainPage />} />
           <Route path="/b2b" element={<ForBusinessPage />} />
+          <Route path="/en/b2b" element={<ForBusinessPage />} />
           <Route path="/faq" element={<FAQPage />} />
+          <Route path="/en/faq" element={<FAQPage />} />
           <Route path="/cars" element={<CarsPage />} />
+          <Route path="/en/cars" element={<CarsPage />} />
           <Route path="/car/:id" element={<CarPage />} />
+          <Route path="/en/car/:id" element={<CarPage />} />
           <Route path="/conditions" element={<ConditionsPage />} />
+          <Route path="/en/conditions" element={<ConditionsPage />} />
           <Route path="/about-us" element={<AboutUsPage />} />
+          <Route path="/en/about-us" element={<AboutUsPage />} />
         </Routes>
         <Footer />
       </div>
