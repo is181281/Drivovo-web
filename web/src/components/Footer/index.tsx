@@ -7,6 +7,7 @@ import style from "./Footer.module.scss";
 import { footerLogo } from "../../assets/images";
 import config from "../../config";
 import SocialLinks from "../SocialLinks";
+import { addLocaleToRoute } from "../../helpers/addLocaleToRoute";
 
 function Footer(): JSX.Element {
   const { t } = useTranslation();
@@ -27,16 +28,16 @@ function Footer(): JSX.Element {
             <SocialLinks theme="dark" />
           </div>
           <div className={style.navigationLinksContainer}>
-            <Link to="/" className={style.navigationLink}>
+            <Link to={addLocaleToRoute('/')} className={style.navigationLink}>
               {t("LinkNames.Main")}
             </Link>
-            <Link to="/conditions" className={style.navigationLink}>
+            <Link to={addLocaleToRoute('/conditions')} className={style.navigationLink}>
               {t("LinkNames.Conditions")}
             </Link>
-            <Link to="/b2b" className={style.navigationLink}>
+            <Link to={addLocaleToRoute('/b2b')} className={style.navigationLink}>
               {t("LinkNames.ForBusiness")}
             </Link>
-            <Link to="/faq" className={style.navigationLink}>
+            <Link to={addLocaleToRoute('/faq')} className={style.navigationLink}>
               {t("LinkNames.FAQ")}
             </Link>
             {/* <Link to="/" className={style.navigationLink}>

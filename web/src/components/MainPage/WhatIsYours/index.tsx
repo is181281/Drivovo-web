@@ -10,6 +10,7 @@ import style from "./WhatIsYours.module.scss";
 import CarCard from "../../CarCard";
 import { useMediaQueryContext } from "../../MediaQueryProvider";
 import { useTypedSelector } from "../../../hooks";
+import { addLocaleToRoute } from "../../../helpers/addLocaleToRoute";
 
 function WhatIsYours(): JSX.Element {
   const { t } = useTranslation();
@@ -45,7 +46,7 @@ function WhatIsYours(): JSX.Element {
             </span>
           </div>
           <Link
-            to="/cars"
+            to={addLocaleToRoute('/cars')}
             className={`${style.navigationLink} ${style.navigationLink__top}`}
           >
             <div className={style.navigationLink__arrow}></div>
@@ -79,7 +80,7 @@ function WhatIsYours(): JSX.Element {
           ></button>
         </div>
         <Link
-          to="/cars"
+          to={addLocaleToRoute('/cars')}
           className={`${style.navigationLink} ${style.navigationLink__bottom}`}
         >
           <div className={style.navigationLink__arrow}></div>
