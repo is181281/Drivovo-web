@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
 import style from "./CarCard.module.scss";
+import { addLocaleToRoute } from "../../helpers/addLocaleToRoute";
 
 type Props = {
   id: string;
@@ -28,7 +29,7 @@ function CarCard({
   const { t } = useTranslation();
 
   return (
-    <NavLink to={`/car/${id}`} className={style.mainWrapper}>
+    <NavLink to={addLocaleToRoute(`/car/${id}`)} className={style.mainWrapper}>
       <div className={style.sideContainer}>
         <div className={style.sideContainer__parameter__name}>
           {t("CarCard.Acceleration")}

@@ -7,6 +7,7 @@ import style from "./CustomSelect.module.scss";
 import { magnifier } from "../../assets/images";
 import { useTypedSelector } from "../../hooks";
 import analyticsService from "../../service/analytics";
+import { addLocaleToRoute } from "../../helpers/addLocaleToRoute";
 
 export type SelectItemType = {
   label: string;
@@ -111,7 +112,7 @@ export default function CustomSelect(): JSX.Element {
           </div>
         </div>
         <Link
-          to={`/car/${selectedItem.value}`}
+          to={addLocaleToRoute(`/car/${selectedItem.value}`)}
           className={style.selectButton}
           onClick={(e) => {
             if (!selectedItem.value) {
