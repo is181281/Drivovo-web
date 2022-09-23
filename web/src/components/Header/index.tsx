@@ -10,6 +10,7 @@ import i18next from "../../internationalization";
 import { Language } from "../../types";
 import SideMenu from "./SideMenu";
 import SocialLinks from "../SocialLinks";
+import { addLocaleToRoute } from "../../helpers/addLocaleToRoute";
 
 function Header(): JSX.Element {
   const { t } = useTranslation();
@@ -19,7 +20,6 @@ function Header(): JSX.Element {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
-
   return (
     <div className={style.mainWrapper} id="header">
       <SideMenu
@@ -27,12 +27,12 @@ function Header(): JSX.Element {
         closeHandler={() => setIsSudeMenuOpen(false)}
       />
       <div className={style.sideContainer}>
-        <Link to="/" className={style.logoContainer}>
+        <Link to={addLocaleToRoute('/')} className={style.logoContainer}>
           <img src={headerLogo} className={style.logoImage} alt="header logo" />
         </Link>
         <div className={style.navigationLinksContainer}>
           <Link
-            to="/"
+            to={addLocaleToRoute('/')}
             className={`${style.navigationLink} ${
               location.pathname === "/" ? style.navigationLink__active : ""
             }`}
@@ -40,7 +40,7 @@ function Header(): JSX.Element {
             {t("LinkNames.Main")}
           </Link>
           <Link
-            to="/b2b"
+            to={addLocaleToRoute('/b2b')}
             className={`${style.navigationLink} ${
               location.pathname === "/b2b" ? style.navigationLink__active : ""
             }`}
@@ -48,7 +48,7 @@ function Header(): JSX.Element {
             {t("LinkNames.ForBusiness")}
           </Link>
           <Link
-            to="/faq"
+            to={addLocaleToRoute('/faq')}
             className={`${style.navigationLink} ${
               location.pathname === "/faq" ? style.navigationLink__active : ""
             }`}
@@ -62,26 +62,45 @@ function Header(): JSX.Element {
           <SocialLinks theme="light" />
         </div>
         <div className={style.languageSelectContainer}>
+        <Link
+          to="/"
+          
+        >
           <div
             className={`${style.languageSelect} ${
               i18next.language === Language.ua
                 ? style.languageSelect__active
                 : ""
             }`}
-            onClick={() => i18next.changeLanguage(Language.ua)}
+            onClick={() => {i18next.changeLanguage(Language.ua)
+            // setIsEng(false)
+            }}
           >
             УКР
           </div>
+          </Link>
+          <Link
+          to="/en"
+          
+        >
           <div
             className={`${style.languageSelect} ${
               i18next.language === Language.en
                 ? style.languageSelect__active
                 : ""
             }`}
-            onClick={() => i18next.changeLanguage(Language.en)}
+            onClick={() => {i18next.changeLanguage(Language.en)
+              // setIsEng(true)
+            
+            }}
           >
-            EN
+         
+           EN
+      
+           
+            
           </div>
+          </Link>
         </div>
         <div className={style.burgerMenu__container}>
           <img
