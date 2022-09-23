@@ -20,6 +20,15 @@ function Header(): JSX.Element {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
+
+  const swithToEngLink = () => {
+    const route = location.pathname;
+    return route.indexOf('/en') > -1 ? 
+    route : route === '/' ? 
+    '/en' : 
+    `/en${location.pathname}`
+  }
+
   return (
     <div className={style.mainWrapper} id="header">
       <SideMenu
@@ -34,7 +43,7 @@ function Header(): JSX.Element {
           <Link
             to={addLocaleToRoute('/')}
             className={`${style.navigationLink} ${
-              location.pathname === "/" ? style.navigationLink__active : ""
+              location.pathname === '/' || location.pathname === '/en' ? style.navigationLink__active : ""
             }`}
           >
             {t("LinkNames.Main")}
@@ -42,7 +51,7 @@ function Header(): JSX.Element {
           <Link
             to={addLocaleToRoute('/b2b')}
             className={`${style.navigationLink} ${
-              location.pathname === "/b2b" ? style.navigationLink__active : ""
+              location.pathname === "/b2b" || location.pathname === "/en/b2b" ? style.navigationLink__active : ""
             }`}
           >
             {t("LinkNames.ForBusiness")}
@@ -50,7 +59,7 @@ function Header(): JSX.Element {
           <Link
             to={addLocaleToRoute('/faq')}
             className={`${style.navigationLink} ${
-              location.pathname === "/faq" ? style.navigationLink__active : ""
+              location.pathname === "/faq" || location.pathname === "/en/faq" ? style.navigationLink__active : ""
             }`}
           >
             {t("LinkNames.FAQ")}
@@ -63,8 +72,7 @@ function Header(): JSX.Element {
         </div>
         <div className={style.languageSelectContainer}>
         <Link
-          to="/"
-          
+          to={location.pathname.replace('/en', '')}  
         >
           <div
             className={`${style.languageSelect} ${
@@ -80,7 +88,7 @@ function Header(): JSX.Element {
           </div>
           </Link>
           <Link
-          to="/en"
+          to={swithToEngLink()}
           
         >
           <div

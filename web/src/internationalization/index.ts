@@ -26,6 +26,4 @@ i18next
     },
   });
 
-console.log(i18next.language);
-
 export default i18next;
